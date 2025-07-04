@@ -38,7 +38,8 @@ function LayoutImageCache({ profile, settings, sections }) {
                 <img key={key}
                      src={utils.file.resolvePath(src)}
                      className={`cache-image`}
-                     alt={"cache-image"}/>
+                     alt={`Preloaded image ${key + 1}`}
+                     aria-hidden="true"/>
             ))}
         </div>
     )

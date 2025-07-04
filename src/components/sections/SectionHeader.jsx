@@ -23,7 +23,7 @@ function SectionHeader({ section }) {
                 </div>
             )}
 
-            <h3 className={`section-header-title ${titleClass}`}
+            <h2 className={`section-header-title ${titleClass} h3`}
                 dangerouslySetInnerHTML={{__html: parsedTitle.title}}/>
         </header>
     )

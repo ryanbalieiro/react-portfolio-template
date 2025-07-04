@@ -60,9 +60,9 @@ function NavProfileCard({ profile, expanded }) {
             )}
 
             <div className={`nav-profile-card-info`}>
-                <h5 className={`nav-profile-card-name`}>
+                <h1 className={`nav-profile-card-name h5`}>
                     <span dangerouslySetInnerHTML={{__html: stylizedName}}/>
-                </h5>
+                </h1>
 
                 {roles?.length > 1 && (
                     <TextTyper strings={roles}

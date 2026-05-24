@@ -18,12 +18,6 @@
                 "title_short_nav": "Portfolio",
                 "title_long_prefix": "Découvrez",
                 "title_long": "Mon {{Portfolio}}"
-            },
-            "ko": {
-                "title_short": "포트폴리오",
-                "title_short_nav": "포트폴리오",
-                "title_long_prefix": "이것은 내",
-                "title_long": "{{포트폴리오}}입니다"
             }
         }
     },
@@ -50,12 +44,6 @@
                     "category_apps": "Apps",
                     "category_web": "Web",
                     "category_utilities": "Utilitaires"
-                },
-                "ko": {
-                    "category_all": "모두",
-                    "category_apps": "앱",
-                    "category_web": "웹",
-                    "category_utilities": "유틸리티"
                 }
             },
             "settings": {
@@ -66,47 +54,180 @@
             "items": [
                 {
                     "id": 1,
-                    "categoryId": "category_utilities",
-                    "img": "images/pictures/portfolio-project-logo-3.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-solid fa-car",
+                    "faIconColors": {"bg": "#cc0000", "fill": "#ffffff"},
                     "preview": {
-                        "links": [
-                            {"href": "https://github.com", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"},
-                            {"href": "https://npm.com", "tooltipString": "see_on_npm", "faIcon": "fa-brands fa-npm"}
-                        ],
-                        "screenshots": [
-                            "images/pictures/screenshot-demo-landscape-1.png",
-                            "images/pictures/screenshot-demo-landscape-2.png",
-                            "images/pictures/screenshot-demo-landscape-3.png",
-                            "images/pictures/screenshot-demo-landscape-4.png",
-                            "images/pictures/screenshot-demo-landscape-5.png"
-                        ],
-                        "screenshotsAspectRatio": "16:9",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=PnV8p1xm7-o"
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "BrainPulse",
-                            "text": "A <b>RESTful API</b> backend built with <b>Node.js</b>, designed for high-performance data processing and real-time event handling.",
-                            "tags": ["API", "REST", "Backend"]
+                            "title": "Kuruma Platform",
+                            "text": "A full-stack vehicle listing and management web application built with <b>Ruby on Rails</b> and <b>Bootstrap</b>, featuring vehicle search, filtering, and a content management system for the Japanese automotive market.",
+                            "tags": ["Ruby on Rails", "Bootstrap", "Web"]
                         },
                         "es": {
-                            "text": "Una <b>API RESTful</b> construida con <b>Node.js</b>, diseñada para el procesamiento de datos de alto rendimiento y la gestión de eventos en tiempo real.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "Una aplicación web full-stack de listados de vehículos construida con <b>Ruby on Rails</b> y <b>Bootstrap</b>, con búsqueda, filtros y un CMS para el mercado automotriz japonés.",
+                            "tags": ["Ruby on Rails", "Bootstrap", "Web"]
                         },
                         "fr": {
-                            "text": "Un backend <b>API RESTful</b> construit avec <b>Node.js</b>, conçu pour le traitement de données haute performance et la gestion d'événements en temps réel.",
-                            "tags": ["API", "REST", "Backend"]
-                        },
-                        "ko": {
-                            "text": "<b>Node.js</b>로 구축된 <b>RESTful API</b> 백엔드로, 고성능 데이터 처리 및 실시간 이벤트 처리용으로 설계되었습니다.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "Une application web full-stack de gestion de véhicules construite avec <b>Ruby on Rails</b> et <b>Bootstrap</b>, avec recherche, filtres et CMS pour le marché automobile japonais.",
+                            "tags": ["Ruby on Rails", "Bootstrap", "Web"]
                         }
                     }
                 },
+
                 {
                     "id": 2,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-solid fa-gauge",
+                    "faIconColors": {"bg": "#1890FF", "fill": "#ffffff"},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Admin CMS Dashboard",
+                            "text": "An internal <b>admin dashboard</b> for managing vehicle listings, user data, and analytics. Built with <b>JavaScript</b> and <b>Ant Design</b> on the frontend, backed by a Rails API.",
+                            "tags": ["Ant Design", "JavaScript", "Rails API"]
+                        },
+                        "es": {
+                            "text": "Un <b>panel de administración</b> interno para gestionar listados de vehículos, datos de usuarios y análisis. Construido con <b>JavaScript</b> y <b>Ant Design</b>, respaldado por una API Rails.",
+                            "tags": ["Ant Design", "JavaScript", "Rails API"]
+                        },
+                        "fr": {
+                            "text": "Un <b>tableau de bord admin</b> interne pour gérer les annonces de véhicules, les données utilisateurs et les analyses. Construit avec <b>JavaScript</b> et <b>Ant Design</b>, soutenu par une API Rails.",
+                            "tags": ["Ant Design", "JavaScript", "Rails API"]
+                        }
+                    }
+                },
+
+                {
+                    "id": 3,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-brands fa-react",
+                    "faIconColors": {"bg": "#000000", "fill": "#ffffff"},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Next.js Frontend",
+                            "text": "A modern, server-rendered frontend application built with <b>Next.js</b> and <b>Shadcn UI</b>, focused on performance, SEO, and a responsive user experience.",
+                            "tags": ["Next.js", "Shadcn UI", "Frontend"]
+                        },
+                        "es": {
+                            "text": "Una aplicación frontend moderna con renderizado en servidor construida con <b>Next.js</b> y <b>Shadcn UI</b>, enfocada en rendimiento, SEO y experiencia de usuario responsiva.",
+                            "tags": ["Next.js", "Shadcn UI", "Frontend"]
+                        },
+                        "fr": {
+                            "text": "Une application frontend moderne avec rendu côté serveur construite avec <b>Next.js</b> et <b>Shadcn UI</b>, axée sur la performance, le SEO et une expérience utilisateur réactive.",
+                            "tags": ["Next.js", "Shadcn UI", "Frontend"]
+                        }
+                    }
+                },
+
+                {
+                    "id": 4,
+                    "categoryId": "category_utilities",
+                    "img": "",
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "#cc0000", "fill": "#ffffff"},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Rails API Service",
+                            "text": "A <b>RESTful API</b> backend built with <b>Ruby on Rails</b> in API mode, providing structured endpoints for vehicle data, user authentication, and integration with third-party services.",
+                            "tags": ["Ruby on Rails", "REST", "API"]
+                        },
+                        "es": {
+                            "text": "Un backend de <b>API RESTful</b> construido con <b>Ruby on Rails</b> en modo API, proporcionando endpoints para datos de vehículos, autenticación e integración con servicios de terceros.",
+                            "tags": ["Ruby on Rails", "REST", "API"]
+                        },
+                        "fr": {
+                            "text": "Un backend <b>API RESTful</b> construit avec <b>Ruby on Rails</b> en mode API, fournissant des endpoints pour les données véhicules, l'authentification et l'intégration de services tiers.",
+                            "tags": ["Ruby on Rails", "REST", "API"]
+                        }
+                    }
+                },
+
+                {
+                    "id": 5,
+                    "categoryId": "category_utilities",
+                    "img": "",
+                    "faIcon": "fa-brands fa-java",
+                    "faIconColors": {"bg": "#007396", "fill": "#ffffff"},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Java Data Service",
+                            "text": "A backend <b>data processing service</b> written in <b>Java</b>, responsible for batch processing, data transformation, and feeding structured vehicle data into the platform database.",
+                            "tags": ["Java", "Backend", "Data Processing"]
+                        },
+                        "es": {
+                            "text": "Un <b>servicio de procesamiento de datos</b> backend escrito en <b>Java</b>, responsable del procesamiento por lotes, transformación de datos y alimentación de la base de datos de vehículos.",
+                            "tags": ["Java", "Backend", "Procesamiento"]
+                        },
+                        "fr": {
+                            "text": "Un <b>service de traitement de données</b> backend écrit en <b>Java</b>, responsable du traitement par lots, de la transformation des données et de l'alimentation de la base de données véhicules.",
+                            "tags": ["Java", "Backend", "Traitement"]
+                        }
+                    }
+                },
+
+                {
+                    "id": 6,
+                    "categoryId": "category_utilities",
+                    "img": "",
+                    "faIcon": "fa-solid fa-wrench",
+                    "faIconColors": {"bg": "#5E2D91", "fill": "#ffffff"},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": ".NET Automation Tool",
+                            "text": "An internal automation utility built with <b>C# and .NET</b> to streamline data entry, content migration, and repetitive workflow tasks, reducing manual effort for the team.",
+                            "tags": ["C#", ".NET", "Automation"]
+                        },
+                        "es": {
+                            "text": "Una utilidad de automatización interna construida con <b>C# y .NET</b> para agilizar la entrada de datos, migración de contenidos y tareas repetitivas, reduciendo el esfuerzo manual del equipo.",
+                            "tags": ["C#", ".NET", "Automatización"]
+                        },
+                        "fr": {
+                            "text": "Un utilitaire d'automatisation interne construit avec <b>C# et .NET</b> pour rationaliser la saisie de données, la migration de contenu et les tâches répétitives, réduisant l'effort manuel de l'équipe.",
+                            "tags": ["C#", ".NET", "Automatisation"]
+                        }
+                    }
+                },
+
+                {
+                    "id": 7,
                     "categoryId": "category_apps",
                     "img": "images/pictures/portfolio-project-logo-7.png",
                     "faIcon": "",
@@ -140,15 +261,12 @@
                         "fr": {
                             "text": "Un client de messagerie multiplateforme construit avec <b>Flutter</b>, offrant une communication efficace et une interface intuitive pour <b>gérer les e-mails</b>.",
                             "tags": ["Flutter", "E-mail", "Communication"]
-                        },
-                        "ko": {
-                            "text": "<b>Flutter</b>로 구축된 크로스플랫폼 이메일 클라이언트로, 이메일 <b>관리</b>를 위한 직관적인 UI를 통해 효율적인 소통을 제공합니다.",
-                            "tags": ["Flutter", "이메일", "소통"]
                         }
                     }
                 },
+
                 {
-                    "id": 3,
+                    "id": 8,
                     "categoryId": "category_apps",
                     "img": "images/pictures/portfolio-project-logo-6.png",
                     "faIcon": "",
@@ -181,54 +299,12 @@
                         "fr": {
                             "text": "Une application de productivité complète développée avec <b>React Native</b>, permettant aux utilisateurs d'organiser tâches, notes et projets sur plusieurs appareils. Elle offre <b>synchronisation cloud</b>, interface intuitive et fonctionnalités de collaboration.",
                             "tags": ["React", "Organisation", "Notes"]
-                        },
-                        "ko": {
-                            "text": "<b>React Native</b>로 개발된 기능이 풍부한 생산성 앱으로, 사용자가 여러 기기에서 작업, 메모, 프로젝트를 <b>클라우드 동기화</b>와 직관적인 UI로 관리할 수 있습니다.",
-                            "tags": ["React", "조직", "메모"]
                         }
                     }
                 },
-                {
-                    "id": 4,
-                    "categoryId": "category_web",
-                    "img": "images/pictures/portfolio-project-logo-1.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-                            {"href": "https://cash.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [
 
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=MQe_MoJ7Iww"
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "SmartCash",
-                            "text": "A finance website built using <b>Next.js</b>, allowing users to <b>track budgets</b> and manage their money with interactive charts and insights.",
-                            "tags": ["Next.js", "Finance", "Money"]
-                        },
-                        "es": {
-                            "title": "SmartCash",
-                            "text": "Un sitio web financiero construido con <b>Next.js</b>, que permite a los usuarios <b>seguir presupuestos</b> y gestionar su dinero con gráficos interactivos e ideas.",
-                            "tags": ["Next.js", "Finanzas", "Dinero"]
-                        },
-                        "fr": {
-                            "title": "SmartCash",
-                            "text": "Un site web financier construit avec <b>Next.js</b>, permettant aux utilisateurs de <b>suivre les budgets</b> et de gérer leur argent avec des graphiques interactifs et des analyses.",
-                            "tags": ["Next.js", "Finance", "Argent"]
-                        },
-                        "ko": {
-                            "title": "SmartCash",
-                            "text": "<b>Next.js</b>로 구축된 금융 웹사이트로, 사용자가 <b>예산을 추적</b>하고 상호작용하는 차트와 통찰력으로 자금을 관리할 수 있습니다.",
-                            "tags": ["Next.js", "금융", "돈"]
-                        }
-                    }
-                },
                 {
-                    "id": 5,
+                    "id": 9,
                     "categoryId": "category_apps",
                     "img": "images/pictures/portfolio-project-logo-2.png",
                     "faIcon": "",
@@ -238,9 +314,7 @@
                             {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
                             {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
                         ],
-                        "screenshots": [
-
-                        ],
+                        "screenshots": [],
                         "screenshotsAspectRatio": "",
                         "youtubeVideo": ""
                     },
@@ -251,141 +325,18 @@
                             "tags": ["Swift", "Photography", "Camera"]
                         },
                         "es": {
-                            "title": "Snappy",
                             "text": "Una app de fotografía potente diseñada con <b>Swift</b> para iOS y Android, con <b>controles avanzados de cámara</b>, herramientas de edición y filtros potenciados por IA para mejoras rápidas de fotos.",
                             "tags": ["Swift", "Fotografía", "Cámara"]
                         },
                         "fr": {
-                            "title": "Snappy",
                             "text": "Une application de photographie puissante conçue avec <b>Swift</b> pour iOS et Android, avec des <b>contrôles avancés de la caméra</b>, des outils d'édition et des filtres IA pour des améliorations rapides des photos.",
                             "tags": ["Swift", "Photographie", "Caméra"]
-                        },
-                        "ko": {
-                            "title": "Snappy",
-                            "text": "<b>Swift</b>로 설계된 강력한 사진 앱으로, iOS 및 Android에서 <b>고급 카메라 제어</b>, 편집 도구, AI 기반 필터를 통해 빠르게 사진을 보정할 수 있습니다.",
-                            "tags": ["Swift", "사진", "카메라"]
                         }
                     }
                 },
-                {
-                    "id": 6,
-                    "categoryId": "category_web",
-                    "img": "images/pictures/portfolio-project-logo-5.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-                            {"href": "https://google.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [
 
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Sweet Scoops",
-                            "text": "A recipe website built with <b>WordPress</b> and WooCommerce, featuring a rich collection of <b>dessert recipes</b> and an integrated e-commerce platform.",
-                            "tags": ["WooCommerce", "Food", "Desserts"]
-                        },
-                        "es": {
-                            "title": "Sweet Scoops",
-                            "text": "Un sitio web de recetas construido con <b>WordPress</b> y WooCommerce, con una rica colección de <b>recetas de postres</b> y una plataforma de comercio electrónico integrada.",
-                            "tags": ["WooCommerce", "Comida", "Postres"]
-                        },
-                        "fr": {
-                            "title": "Sweet Scoops",
-                            "text": "Un site de recettes construit avec <b>WordPress</b> et WooCommerce, présentant une riche collection de <b>recettes de desserts</b> et une plateforme de commerce électronique intégrée.",
-                            "tags": ["WooCommerce", "Cuisine", "Desserts"]
-                        },
-                        "ko": {
-                            "title": "Sweet Scoops",
-                            "text": "<b>WordPress</b>와 WooCommerce로 구축된 레시피 웹사이트로, 풍부한 <b>디저트 레시피</b> 모음과 통합된 전자상거래 플랫폼을 제공합니다.",
-                            "tags": ["WooCommerce", "음식", "디저트"]
-                        }
-                    }
-                },
                 {
-                    "id": 7,
-                    "categoryId": "category_web",
-                    "img": "",
-                    "faIcon": "fa-solid fa-guitar",
-                    "faIconColors": {"bg": "#7671AA", "fill": "#EEEEEE"},
-                    "preview": {
-                        "links": [
-                            {"href": "https://google.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "RockVerse",
-                            "text": "A dynamic music and entertainment website developed with <b>Django</b>, showcasing rock music news, events, and <b>streaming content</b>.",
-                            "tags": ["Django", "Music", "Rock"]
-                        },
-                        "es": {
-                            "title": "RockVerse",
-                            "text": "Un sitio web dinámico de música y entretenimiento desarrollado con <b>Django</b>, que muestra noticias de música rock, eventos y <b>contenido en streaming</b>.",
-                            "tags": ["Django", "Música", "Rock"]
-                        },
-                        "fr": {
-                            "title": "RockVerse",
-                            "text": "Un site web de musique et de divertissement dynamique développé avec <b>Django</b>, mettant en avant des nouvelles, événements et <b>contenu en streaming</b> sur le rock.",
-                            "tags": ["Django", "Musique", "Rock"]
-                        },
-                        "ko": {
-                            "title": "RockVerse",
-                            "text": "<b>Django</b>로 개발된 동적인 음악 및 엔터테인먼트 웹사이트로, 록 음악 뉴스, 이벤트 및 <b>스트리밍 콘텐츠</b>를 제공합니다.",
-                            "tags": ["Django", "음악", "록"]
-                        }
-                    }
-                },
-                {
-                    "id": 8,
-                    "categoryId": "category_utilities",
-                    "img": "images/pictures/portfolio-project-logo-4.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=bf3Lz33nHy0"
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Soccer Analytics",
-                            "text": "An AI-powered sports analytics platform built with <b>Python</b> and <b>TensorFlow</b>, offering detailed soccer <b>predictions</b> and team management tools.",
-                            "tags": ["AI", "Prediction", "Soccer"]
-                        },
-                        "es": {
-                            "title": "Soccer Analytics",
-                            "text": "Una plataforma de análisis deportivo impulsada por IA construida con <b>Python</b> y <b>TensorFlow</b>, que ofrece <b>predicciones</b> detalladas de fútbol y herramientas de gestión de equipos.",
-                            "tags": ["IA", "Predicción", "Fútbol"]
-                        },
-                        "fr": {
-                            "title": "Soccer Analytics",
-                            "text": "Une plateforme d'analytique sportive alimentée par IA construite avec <b>Python</b> et <b>TensorFlow</b>, offrant des <b>prédictions</b> détaillées pour le football et des outils de gestion d'équipe.",
-                            "tags": ["IA", "Prédiction", "Football"]
-                        },
-                        "ko": {
-                            "title": "Soccer Analytics",
-                            "text": "<b>Python</b> 및 <b>TensorFlow</b>로 구축된 AI 기반 스포츠 분석 플랫폼으로, 축구에 대한 <b>예측</b> 및 팀 관리 도구를 제공합니다.",
-                            "tags": ["AI", "예측", "축구"]
-                        }
-                    }
-                },
-                {
-                    "id": 9,
+                    "id": 10,
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-truck-fast",
@@ -396,9 +347,7 @@
                             {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
                             {"href": "https://windows.com", "tooltipString": "see_on_windows_store", "faIcon": "fa-brands fa-windows"}
                         ],
-                        "screenshots": [
-
-                        ],
+                        "screenshots": [],
                         "screenshotsAspectRatio": "",
                         "youtubeVideo": ""
                     },
@@ -409,19 +358,12 @@
                             "tags": ["React Native", "Delivery", "Real-Time Tracking"]
                         },
                         "es": {
-                            "title": "QuickDrop",
                             "text": "Una app de entregas multiplataforma construida con <b>React Native</b> y un backend de <b>Node.js</b>, con <b>seguimiento en tiempo real</b> e integración perfecta en múltiples plataformas.",
                             "tags": ["React Native", "Entrega", "Seguimiento"]
                         },
                         "fr": {
-                            "title": "QuickDrop",
                             "text": "Une application de livraison multiplateforme construite avec <b>React Native</b> et un backend <b>Node.js</b>, avec <b>suivi en temps réel</b> et intégration fluide sur plusieurs plateformes.",
                             "tags": ["React Native", "Livraison", "Suivi"]
-                        },
-                        "ko": {
-                            "title": "QuickDrop",
-                            "text": "<b>React Native</b>와 <b>Node.js</b> 백엔드로 구축된 크로스플랫폼 배송 앱으로, <b>실시간 추적</b> 및 여러 플랫폼과의 원활한 통합을 제공합니다.",
-                            "tags": ["React Native", "배송", "실시간 추적"]
                         }
                     }
                 }

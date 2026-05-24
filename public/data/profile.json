@@ -1,5 +1,5 @@
 {
-    "name": "Mark Choi",
+    "name": "Tri Nguyen",
 
     "profilePictureUrl": "images/pictures/profile-picture.jpg",
     "resumePdfUrl": "",
@@ -10,48 +10,33 @@
 
     "locales": {
         "en": {
-            "localized_name": "Mark Choi",
-            "localized_name_stylized": " [[Mark {{Choi}}]]",
-            "status_message_available_for_freelance": "Available for freelance!",
+            "localized_name": "Tri Nguyen",
+            "localized_name_stylized": "[[Tri]] {{Nguyen}}",
+            "status_message_available_for_freelance": "Open to new opportunities!",
             "roles": [
-                "Backend Developer",
-                "Frontend Developer",
-                "DevOps Engineer",
-                "UX Designer"
-            ],
-            "name_pronunciation_ipa": "/mark chwe/",
-            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
+                "Ruby on Rails Developer",
+                "Web Developer",
+                "Full-Stack Developer",
+                "Frontend Developer"
+            ]
         },
         "es": {
-            "status_message_available_for_freelance": "¡Disponible para freelance!",
+            "status_message_available_for_freelance": "¡Abierto a nuevas oportunidades!",
             "roles": [
-                "Desarrollador Backend",
-                "Desarrollador Frontend",
-                "Ingeniero DevOps",
-                "Diseñador UX"
+                "Desarrollador Ruby on Rails",
+                "Desarrollador Web",
+                "Desarrollador Full-Stack",
+                "Desarrollador Frontend"
             ]
         },
         "fr": {
-            "status_message_available_for_freelance": "Disponible pour freelance !",
+            "status_message_available_for_freelance": "Ouvert à de nouvelles opportunités !",
             "roles": [
-                "Développeur Backend",
-                "Développeur Frontend",
-                "Ingénieur DevOps",
-                "Designer UX"
+                "Développeur Ruby on Rails",
+                "Développeur Web",
+                "Développeur Full-Stack",
+                "Développeur Frontend"
             ]
-        },
-        "ko": {
-            "localized_name": "최민석",
-            "localized_name_stylized": "{{최}}민석",
-            "status_message_available_for_freelance": "프리랜스 가능합니다!",
-            "roles": [
-                "백엔드 개발자",
-                "프론트엔드 개발자",
-                "데브옵스 엔지니어",
-                "UX 디자이너"
-            ],
-            "name_pronunciation_ipa": "/chwe min-seok/",
-            "name_pronunciation_audio_url": "audio/korean-name-pronunciation.mp3"
         }
     }
 }

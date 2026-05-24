@@ -10,6 +10,62 @@ import ArticleItemPreviewMenu from "/src/components/articles/partials/ArticleIte
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 
 /**
+ * Pure function — safe to unit test without React providers.
+ * Matches query against item title, tags, and description (case-insensitive).
+ * @param {ArticleItemDataWrapper[]} items
+ * @param {string} query
+ * @returns {ArticleItemDataWrapper[]}
+ */
+export function filterPortfolioItems(items, query) {
+    if (!query || !query.trim()) return items
+    const q = query.trim().toLowerCase()
+    return items.filter(item => {
+        const title = (item.locales?.title || '').toLowerCase()
+        const description = (item.locales?.text || '').toLowerCase()
+        const tags = (item.locales?.tags || []).map(t => t.toLowerCase())
+        return title.includes(q) || description.includes(q) || tags.some(t => t.includes(q))
+    })
+}
+
+/**
+ * @param {string} searchQuery
+ * @param {Function} setSearchQuery
+ * @param {Function} onClear
+ */
+function PortfolioSearchBar({ searchQuery, setSearchQuery, onClear }) {
+    return (
+        <div className="portfolio-search-bar" role="search">
+            <label htmlFor="portfolio-search-input" className="visually-hidden">
+                Search projects
+            </label>
+            <div className="portfolio-search-bar-inner">
+                <i className="fa-solid fa-magnifying-glass portfolio-search-icon" aria-hidden="true"/>
+                <input
+                    id="portfolio-search-input"
+                    type="search"
+                    className="portfolio-search-input"
+                    placeholder="Search by title, tag, or description..."
+                    value={searchQuery}
+                    onChange={e => setSearchQuery(e.target.value)}
+                    aria-label="Search projects by title, tag, or description"
+                    autoComplete="off"
+                />
+                {searchQuery && (
+                    <button
+                        className="portfolio-search-clear"
+                        onClick={onClear}
+                        aria-label="Clear search"
+                        type="button"
+                    >
+                        <i className="fa-solid fa-xmark" aria-hidden="true"/>
+                    </button>
+                )}
+            </div>
+        </div>
+    )
+}
+
+/**
  * @param {ArticleDataWrapper} dataWrapper
  * @param {Number} id
  * @return {JSX.Element}
@@ -17,6 +73,18 @@ import {useLanguage} from "/src/providers/LanguageProvider.jsx"
  */
 function ArticlePortfolio({ dataWrapper, id }) {
     const [selectedItemCategoryId, setSelectedItemCategoryId] = useState(null)
+    const [searchQuery, setSearchQuery] = useState('')
+    const [debouncedQuery, setDebouncedQuery] = useState('')
+
+    useEffect(() => {
+        const timer = setTimeout(() => setDebouncedQuery(searchQuery), 300)
+        return () => clearTimeout(timer)
+    }, [searchQuery])
+
+    const handleClear = () => {
+        setSearchQuery('')
+        document.getElementById('portfolio-search-input')?.focus()
+    }
 
     return (
         <Article id={dataWrapper.uniqueId}
@@ -25,8 +93,14 @@ function ArticlePortfolio({ dataWrapper, id }) {
                  className={`article-portfolio`}
                  selectedItemCategoryId={selectedItemCategoryId}
                  setSelectedItemCategoryId={setSelectedItemCategoryId}>
+            <PortfolioSearchBar
+                searchQuery={searchQuery}
+                setSearchQuery={setSearchQuery}
+                onClear={handleClear}
+            />
             <ArticlePortfolioItems dataWrapper={dataWrapper}
-                                   selectedItemCategoryId={selectedItemCategoryId}/>
+                                   selectedItemCategoryId={selectedItemCategoryId}
+                                   searchQuery={debouncedQuery}/>
         </Article>
     )
 }
@@ -37,12 +111,13 @@ function ArticlePortfolio({ dataWrapper, id }) {
  * @return {JSX.Element}
  * @constructor
  */
-function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId }) {
+function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId, searchQuery }) {
     const constants = useConstants()
     const language = useLanguage()
     const viewport = useViewport()
 
-    const filteredItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
+    const categoryItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
+    const filteredItems = filterPortfolioItems(categoryItems, searchQuery)
     const customBreakpoint = viewport.getCustomBreakpoint(constants.SWIPER_BREAKPOINTS_FOR_THREE_SLIDES)
 
     const itemsPerRow = customBreakpoint?.slidesPerView || 1
@@ -52,13 +127,31 @@ function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId }) {
         selectedItemCategoryId + "-" + language.getSelectedLanguage()?.id :
         language.getSelectedLanguage()?.id
 
+    if (filteredItems.length === 0 && searchQuery) {
+        return (
+            <div className="portfolio-empty-state" role="status" aria-live="polite">
+                <i className="fa-solid fa-magnifying-glass" aria-hidden="true"/>
+                <p>No projects match <strong>"{searchQuery}"</strong></p>
+                <button
+                    className="portfolio-empty-state-reset"
+                    onClick={() => document.getElementById('portfolio-search-input')?.focus()}
+                    type="button"
+                >
+                    Try a different search
+                </button>
+            </div>
+        )
+    }
+
     if(dataWrapper.categories?.length) {
         return (
-            <Transitionable id={dataWrapper.uniqueId}
-                            refreshFlag={refreshFlag}
+            <Transitionable id={dataWrapper.uniqueId + searchQuery}
+                            refreshFlag={refreshFlag + searchQuery}
                             delayBetweenItems={100}
                             animation={Transitionable.Animations.POP}
-                            className={`article-portfolio-items ${itemsPerRowClass}`}>
+                            className={`article-portfolio-items ${itemsPerRowClass}`}
+                            aria-live="polite"
+                            aria-label={`${filteredItems.length} projects`}>
                 {filteredItems.map((itemWrapper, key) => (
                     <ArticlePortfolioItem itemWrapper={itemWrapper}
                                           key={key}/>
@@ -68,7 +161,9 @@ function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId }) {
     }
     else {
         return (
-            <div className={`article-portfolio-items ${itemsPerRowClass} mb-3 mb-lg-2`}>
+            <div className={`article-portfolio-items ${itemsPerRowClass} mb-3 mb-lg-2`}
+                 aria-live="polite"
+                 aria-label={`${filteredItems.length} projects`}>
                 {filteredItems.map((itemWrapper, key) => (
                     <ArticlePortfolioItem itemWrapper={itemWrapper}
                                           key={key}/>

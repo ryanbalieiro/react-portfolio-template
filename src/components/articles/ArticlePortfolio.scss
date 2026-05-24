@@ -93,3 +93,102 @@ div.article-portfolio-item-body {
 div.article-portfolio-item-footer {
     margin-top: 10px;
 }
+
+/** ---------- SEARCH BAR -------------------- */
+div.portfolio-search-bar {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+div.portfolio-search-bar-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--theme-boards-background);
+    border: 1px solid var(--theme-texts-light-2);
+    border-radius: $standard-border-radius;
+    padding: 8px 12px;
+    gap: 8px;
+    width: 100%;
+
+    &:focus-within {
+        border-color: var(--theme-primary);
+    }
+}
+
+i.portfolio-search-icon {
+    color: var(--theme-texts-light-2);
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+input.portfolio-search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 0.9rem;
+    color: var(--theme-texts-light-1);
+    min-width: 0;
+
+    &::placeholder {
+        color: var(--theme-texts-light-2);
+    }
+
+    &::-webkit-search-cancel-button {
+        display: none;
+    }
+}
+
+button.portfolio-search-clear {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: var(--theme-texts-light-2);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    &:hover {
+        color: var(--theme-primary);
+    }
+}
+
+/** ---------- EMPTY STATE ------------------- */
+div.portfolio-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--theme-texts-light-2);
+
+    i {
+        font-size: 2rem;
+        opacity: 0.5;
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.95rem;
+    }
+}
+
+button.portfolio-empty-state-reset {
+    background: none;
+    border: 1px solid var(--theme-texts-light-2);
+    border-radius: $standard-border-radius;
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    color: var(--theme-texts-light-1);
+    cursor: pointer;
+
+    &:hover {
+        border-color: var(--theme-primary);
+        color: var(--theme-primary);
+    }
+}

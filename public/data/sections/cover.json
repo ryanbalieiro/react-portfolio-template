@@ -5,19 +5,19 @@
                 "title_short": "Welcome!",
                 "title_short_nav": "About me",
                 "title_long_prefix": "Hello...",
-                "title_long": "I'm {{Mark Choi!}}"
+                "title_long": "I'm {{Tung Nguyen!}}"
             },
             "es": {
                 "title_short": "¡Saludos!",
                 "title_short_nav": "Sobre mí",
                 "title_long_prefix": "Hola...",
-                "title_long": "Soy {{Mark Choi!}}"
+                "title_long": "Soy {{Tung Nguyen!}}"
             },
             "fr": {
                 "title_short": "Salut !",
                 "title_short_nav": "À propos",
                 "title_long_prefix": "Salut...",
-                "title_long": "Je suis {{Mark Choi !}}"
+                "title_long": "Je suis {{Tung Nguyen !}}"
             },
             "ko": {
                 "title_short": "환영합니다!",
@@ -47,8 +47,8 @@
                 },
                 {
                     "id": 2,
-                    "label": "mark.choi@dev.com",
-                    "link": {"href": "mailto:mark.choi@dev.com", "tooltipString": "email_me"},
+                    "label": "mark.Nguyen@dev.com",
+                    "link": {"href": "mailto:mark.Nguyen@dev.com", "tooltipString": "email_me"},
                     "faIcon": "fa-regular fa-envelope"
                 },
                 {
@@ -121,15 +121,15 @@
                     "locales": {
                         "en": {
                             "title": "CEO at [[SalesForce]]",
-                            "text": "Working with Mark was a truly [[transformative experience]]. His outstanding programming skills and collaborative spirit not only elevated the quality of our project but also brought a renewed sense of motivation and purpose to us."
+                            "text": "Working with Tungwas a truly [[transformative experience]]. His outstanding programming skills and collaborative spirit not only elevated the quality of our project but also brought a renewed sense of motivation and purpose to us."
                         },
                         "es": {
                             "title": "CEO en [[SalesForce]]",
-                            "text": "Trabajar con Mark fue una [[experiencia transformadora]]. Su gran habilidad para programar y su espíritu colaborativo mejoraron el proyecto y nos devolvieron la motivación y el propósito."
+                            "text": "Trabajar con Tungfue una [[experiencia transformadora]]. Su gran habilidad para programar y su espíritu colaborativo mejoraron el proyecto y nos devolvieron la motivación y el propósito."
                         },
                         "fr": {
                             "title": "PDG de [[SalesForce]]",
-                            "text": "Travailler avec Mark fut une [[expérience transformante]]. Ses compétences en programmation et son esprit d’équipe ont élevé le projet et ravivé notre motivation et notre but."
+                            "text": "Travailler avec Tungfut une [[expérience transformante]]. Ses compétences en programmation et son esprit d’équipe ont élevé le projet et ravivé notre motivation et notre but."
                         },
                         "ko": {
                             "title": "세일즈포스 CEO",
@@ -147,15 +147,15 @@
                     "locales": {
                         "en": {
                             "title": "Lead Developer at [[GitHub]]",
-                            "text": "Having Mark on our team was an invaluable asset. His [[deep programming insights and mentorship]] not only elevated our projects but also empowered us to tackle every challenge with confidence and creativity."
+                            "text": "Having Tungon our team was an invaluable asset. His [[deep programming insights and mentorship]] not only elevated our projects but also empowered us to tackle every challenge with confidence and creativity."
                         },
                         "es": {
                             "title": "Desarrollador Principal en [[GitHub]]",
-                            "text": "Tener a Mark fue un recurso invaluable. Sus [[profundos conocimientos y mentoría]] mejoraron nuestros proyectos y nos dieron confianza para afrontar cualquier desafío con creatividad."
+                            "text": "Tener a Tungfue un recurso invaluable. Sus [[profundos conocimientos y mentoría]] mejoraron nuestros proyectos y nos dieron confianza para afrontar cualquier desafío con creatividad."
                         },
                         "fr": {
                             "title": "Développeur Principal chez [[GitHub]]",
-                            "text": "La présence de Mark fut un atout inestimable. Ses [[connaissances en programmation et son mentorat]] ont renforcé nos projets et notre capacité à relever les défis avec assurance."
+                            "text": "La présence de Tungfut un atout inestimable. Ses [[connaissances en programmation et son mentorat]] ont renforcé nos projets et notre capacité à relever les défis avec assurance."
                         },
                         "ko": {
                             "title": "[[GitHub]] 수석 개발자",
@@ -173,15 +173,15 @@
                     "locales": {
                         "en": {
                             "title": "Managing Director at [[Dingga]]",
-                            "text": "Collaborating with Mark was a true [[game changer]] for our entire development process. His [[deep technical expertise]], creative problem-solving, and proactive mindset were absolutely invaluable."
+                            "text": "Collaborating with Tungwas a true [[game changer]] for our entire development process. His [[deep technical expertise]], creative problem-solving, and proactive mindset were absolutely invaluable."
                         },
                         "es": {
                             "title": "Directora General en [[Dingga]]",
-                            "text": "Colaborar con Mark fue un verdadero [[punto de inflexión]]. Su [[gran experiencia técnica]], creatividad y mentalidad proactiva fueron absolutamente invaluables para nuestro equipo."
+                            "text": "Colaborar con Tungfue un verdadero [[punto de inflexión]]. Su [[gran experiencia técnica]], creatividad y mentalidad proactiva fueron absolutamente invaluables para nuestro equipo."
                         },
                         "fr": {
                             "title": "Directrice Générale chez [[Dingga]]",
-                            "text": "Travailler avec Mark a été un vrai [[tournant]]. Son [[expertise technique approfondie]], sa créativité et sa proactivité ont été d’une valeur inestimable pour notre développement."
+                            "text": "Travailler avec Tunga été un vrai [[tournant]]. Son [[expertise technique approfondie]], sa créativité et sa proactivité ont été d’une valeur inestimable pour notre développement."
                         },
                         "ko": {
                             "title": "딩가 전무이사",
@@ -199,15 +199,15 @@
                     "locales": {
                         "en": {
                             "title": "Creative Director at [[Dribbble]]",
-                            "text": "Mark Choi's [[attention to detail]] and his [[innovative thinking]] brought a fresh perspective to our whole design process! Simply amazing!"
+                            "text": "Tung Nguyen's [[attention to detail]] and his [[innovative thinking]] brought a fresh perspective to our whole design process! Simply amazing!"
                         },
                         "es": {
                             "title": "Director Creativo en [[Dribbble]]",
-                            "text": "La [[atención al detalle]] y el [[pensamiento innovador]] de Mark Choi aportaron una perspectiva fresca a todo nuestro proceso de diseño. ¡Simplemente increíble!"
+                            "text": "La [[atención al detalle]] y el [[pensamiento innovador]] de Tung Nguyen aportaron una perspectiva fresca a todo nuestro proceso de diseño. ¡Simplemente increíble!"
                         },
                         "fr": {
                             "title": "Directeur Créatif chez [[Dribbble]]",
-                            "text": "L’[[attention aux détails]] et la [[pensée innovante]] de Mark Choi ont apporté une perspective nouvelle à tout notre processus de design ! Simplement incroyable !"
+                            "text": "L’[[attention aux détails]] et la [[pensée innovante]] de Tung Nguyen ont apporté une perspective nouvelle à tout notre processus de design ! Simplement incroyable !"
                         },
                         "ko": {
                             "title": "[[Dribbble]] 크리에이티브 디렉터",

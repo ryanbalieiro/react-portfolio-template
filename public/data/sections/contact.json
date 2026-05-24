@@ -98,8 +98,8 @@
                     "id":2,
                     "faIcon": "fa-solid fa-envelope",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "mark.choi@email.com",
-                    "link": {"href": "mailto:mark.choi@email.com", "tooltipString": "email_me"},
+                    "label": "mark.Nguyen@email.com",
+                    "link": {"href": "mailto:mark.Nguyen@email.com", "tooltipString": "email_me"},
                     "copyToClipboardButton": true,
                     "locales": {
                         "en": {"title": "E-mail"},
@@ -110,7 +110,7 @@
                     "id": 3,
                     "faIcon": "fa-brands fa-linkedin",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "@markchoi",
+                    "label": "@nguyenngoctung",
                     "link": {"href": "https://linkedin.com/in/", "tooltipString": "open_website"},
                     "copyToClipboardButton": false,
                     "locales": {
@@ -122,8 +122,8 @@
                     "id": 4,
                     "faIcon": "fa-brands fa-facebook",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "Mark Choi",
-                    "link": {"href": "https://facebook.com/profiles/mark.choi.855/default", "tooltipString": "open_website"},
+                    "label": "Nguyen Ngoc Tung",
+                    "link": {"href": "https://facebook.com/profiles/mark.Nguyen.855/default", "tooltipString": "open_website"},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {"title": "Facebook"},
@@ -134,7 +134,7 @@
                     "id": 5,
                     "faIcon": "fa-brands fa-instagram",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "@codingmark",
+                    "label": "@codingtung",
                     "link": {"href": "https://instagram.com/", "tooltipString": "open_website"},
                     "copyToClipboardButton": false,
                     "locales": {
@@ -146,8 +146,8 @@
                     "id": 6,
                     "faIcon": "fa-brands fa-tiktok",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "@markchoi",
-                    "link": {"href": "https://tiktok.com/@markchoi", "tooltipString": "open_website"},
+                    "label": "@nguyenngoctung",
+                    "link": {"href": "https://tiktok.com/@markNguyen", "tooltipString": "open_website"},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": { "title": "TikTok" },

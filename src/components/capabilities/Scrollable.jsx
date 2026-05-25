@@ -86,6 +86,7 @@ function Scrollable({ children, id, pluginEnabled, shouldResetScroll, setShouldR
     )
 }
 
+// eslint-disable-next-line react-hooks/rules-of-hooks -- Scrollbar.use() is a library API, not a React hook
 Scrollbar.use(OverscrollPlugin)
 
 export default Scrollable

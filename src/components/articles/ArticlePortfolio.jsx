@@ -8,6 +8,9 @@ import AvatarView from "/src/components/generic/AvatarView.jsx"
 import {Tag, Tags} from "/src/components/generic/Tags.jsx"
 import ArticleItemPreviewMenu from "/src/components/articles/partials/ArticleItemPreviewMenu.jsx"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
+import PortfolioSearchBar from "/src/components/articles/partials/PortfolioSearchBar.jsx"
+import useDebouncedValue from "/src/hooks/useDebouncedValue.js"
+import {matchesSearchQuery} from "/src/utils/portfolioSearch.js"
 
 /**
  * @param {ArticleDataWrapper} dataWrapper
@@ -17,6 +20,14 @@ import {useLanguage} from "/src/providers/LanguageProvider.jsx"
  */
 function ArticlePortfolio({ dataWrapper, id }) {
     const [selectedItemCategoryId, setSelectedItemCategoryId] = useState(null)
+    const [searchQuery, setSearchQuery] = useState("")
+    const debouncedQuery = useDebouncedValue(searchQuery, 300)
+    const language = useLanguage()
+
+    // Switching category resets the search input.
+    useEffect(() => {
+        setSearchQuery("")
+    }, [selectedItemCategoryId])
 
     return (
         <Article id={dataWrapper.uniqueId}
@@ -25,8 +36,16 @@ function ArticlePortfolio({ dataWrapper, id }) {
                  className={`article-portfolio`}
                  selectedItemCategoryId={selectedItemCategoryId}
                  setSelectedItemCategoryId={setSelectedItemCategoryId}>
+            <PortfolioSearchBar value={searchQuery}
+                                onChange={setSearchQuery}
+                                onClear={() => setSearchQuery("")}
+                                placeholder={language.getString("portfolio_search_placeholder")}
+                                label={language.getString("portfolio_search_label")}
+                                clearLabel={language.getString("portfolio_search_clear")}/>
             <ArticlePortfolioItems dataWrapper={dataWrapper}
-                                   selectedItemCategoryId={selectedItemCategoryId}/>
+                                   selectedItemCategoryId={selectedItemCategoryId}
+                                   searchQuery={debouncedQuery}
+                                   onResetSearch={() => setSearchQuery("")}/>
         </Article>
     )
 }
@@ -34,48 +53,116 @@ function ArticlePortfolio({ dataWrapper, id }) {
 /**
  * @param {ArticleDataWrapper} dataWrapper
  * @param {String} selectedItemCategoryId
+ * @param {String} searchQuery
+ * @param {Function} onResetSearch
  * @return {JSX.Element}
  * @constructor
  */
-function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId }) {
+function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId, searchQuery = "", onResetSearch }) {
     const constants = useConstants()
     const language = useLanguage()
     const viewport = useViewport()
 
-    const filteredItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
+    const categoryItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
+    const filteredItems = categoryItems.filter(item => matchesSearchQuery(item, searchQuery))
     const customBreakpoint = viewport.getCustomBreakpoint(constants.SWIPER_BREAKPOINTS_FOR_THREE_SLIDES)
 
     const itemsPerRow = customBreakpoint?.slidesPerView || 1
     const itemsPerRowClass = `article-portfolio-items-${itemsPerRow}-per-row`
 
     const refreshFlag = dataWrapper.categories?.length ?
-        selectedItemCategoryId + "-" + language.getSelectedLanguage()?.id :
-        language.getSelectedLanguage()?.id
+        selectedItemCategoryId + "-" + language.getSelectedLanguage()?.id + "-" + searchQuery :
+        language.getSelectedLanguage()?.id + "-" + searchQuery
+
+    const trimmedQuery = (searchQuery || "").trim()
+    const isEmptyState = trimmedQuery.length > 0 && filteredItems.length === 0
+
+    const statusMessage = trimmedQuery.length > 0
+        ? (filteredItems.length === 1
+            ? language.getString("portfolio_search_results_count_singular").replace("{x}", "1").replace(/\[\[|]]/g, "")
+            : language.getString("portfolio_search_results_count_plural").replace("{x}", String(filteredItems.length)).replace(/\[\[|]]/g, ""))
+        : ""
+
+    const statusRegion = (
+        <div role="status" aria-live="polite" className={`visually-hidden`}>
+            {statusMessage}
+        </div>
+    )
+
+    if(isEmptyState) {
+        return (
+            <>
+                {statusRegion}
+                <PortfolioEmptyState query={trimmedQuery}
+                                     onReset={onResetSearch}/>
+            </>
+        )
+    }
 
     if(dataWrapper.categories?.length) {
         return (
-            <Transitionable id={dataWrapper.uniqueId}
-                            refreshFlag={refreshFlag}
-                            delayBetweenItems={100}
-                            animation={Transitionable.Animations.POP}
-                            className={`article-portfolio-items ${itemsPerRowClass}`}>
-                {filteredItems.map((itemWrapper, key) => (
-                    <ArticlePortfolioItem itemWrapper={itemWrapper}
-                                          key={key}/>
-                ))}
-            </Transitionable>
+            <>
+                {statusRegion}
+                <Transitionable id={dataWrapper.uniqueId}
+                                refreshFlag={refreshFlag}
+                                delayBetweenItems={100}
+                                animation={Transitionable.Animations.POP}
+                                className={`article-portfolio-items ${itemsPerRowClass}`}>
+                    {filteredItems.map((itemWrapper, key) => (
+                        <ArticlePortfolioItem itemWrapper={itemWrapper}
+                                              key={key}/>
+                    ))}
+                </Transitionable>
+            </>
         )
     }
     else {
         return (
-            <div className={`article-portfolio-items ${itemsPerRowClass} mb-3 mb-lg-2`}>
-                {filteredItems.map((itemWrapper, key) => (
-                    <ArticlePortfolioItem itemWrapper={itemWrapper}
-                                          key={key}/>
-                ))}
-            </div>
+            <>
+                {statusRegion}
+                <div className={`article-portfolio-items ${itemsPerRowClass} mb-3 mb-lg-2`}>
+                    {filteredItems.map((itemWrapper, key) => (
+                        <ArticlePortfolioItem itemWrapper={itemWrapper}
+                                              key={key}/>
+                    ))}
+                </div>
+            </>
         )
     }
+}
+
+/**
+ * @param {Object} props
+ * @param {string} props.query
+ * @param {function(): void} props.onReset
+ * @returns {JSX.Element}
+ */
+function PortfolioEmptyState({ query, onReset }) {
+    const language = useLanguage()
+
+    const message = language.getString("portfolio_search_no_results")
+        .replace("{x}", `<strong>${escapeHtml(query)}</strong>`)
+
+    return (
+        <div className={`portfolio-empty-state`} role="region" aria-label={language.getString("portfolio_search_label")}>
+            <div className={`portfolio-empty-state-title`}
+                 dangerouslySetInnerHTML={{__html: message.replace(/\[\[|]]/g, "")}}/>
+            <button type="button"
+                    className={`portfolio-empty-state-reset`}
+                    onClick={onReset}>
+                {language.getString("portfolio_search_reset")}
+            </button>
+        </div>
+    )
+}
+
+function escapeHtml(value) {
+    return (value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;")
 }
 
 /**

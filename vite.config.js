@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -5,6 +6,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     base: '/react-portfolio-template/',
     plugins: [react()],
+    test: {
+        environment: 'jsdom',
+        globals: true,
+        setupFiles: './src/test/setup.js',
+        css: false,
+    },
     build: {
         rollupOptions: {
             output: {

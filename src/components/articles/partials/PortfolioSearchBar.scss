@@ -1,0 +1,96 @@
+@import "/src/styles/extend.scss";
+
+.portfolio-search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 18px 0 4px;
+
+    .portfolio-search-bar-icon {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--theme-texts-light-2);
+        pointer-events: none;
+        font-size: 0.95em;
+    }
+
+    .portfolio-search-bar-input {
+        width: 100%;
+        padding: 10px 40px 10px 38px;
+        background-color: var(--theme-boards-background);
+        color: var(--theme-texts-light-1);
+        border: 1px solid transparent;
+        border-radius: $standard-border-radius;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+        &::placeholder {
+            color: var(--theme-texts-light-2);
+            opacity: 0.85;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: var(--theme-primary);
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+        }
+
+        // Hide the browser's native search clear control; we render our own for consistency.
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-decoration {
+            -webkit-appearance: none;
+            appearance: none;
+        }
+    }
+
+    .portfolio-search-bar-clear {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        color: var(--theme-texts-light-2);
+        padding: 6px 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        line-height: 1;
+
+        &:hover, &:focus-visible {
+            color: var(--theme-primary);
+            outline: none;
+        }
+    }
+}
+
+.portfolio-empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 28px 16px;
+    color: var(--theme-texts-light-1);
+    background-color: var(--theme-boards-background);
+    border-radius: $standard-border-radius;
+
+    .portfolio-empty-state-title {
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+
+    .portfolio-empty-state-reset {
+        margin-top: 10px;
+        background: transparent;
+        border: 1px solid var(--theme-primary);
+        color: var(--theme-primary);
+        padding: 6px 16px;
+        border-radius: $standard-border-radius;
+        cursor: pointer;
+
+        &:hover, &:focus-visible {
+            background-color: var(--theme-primary);
+            color: var(--theme-boards-background);
+            outline: none;
+        }
+    }
+}

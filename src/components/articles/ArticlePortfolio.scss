@@ -1,5 +1,114 @@
 @import "/src/styles/extend.scss";
 
+/** ============================================================
+    PORTFOLIO SEARCH BAR
+    ============================================================ */
+
+div.portfolio-search-wrapper {
+    margin-bottom: 20px;
+}
+
+div.portfolio-search-input-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--theme-boards-background);
+    border: 1.5px solid var(--theme-borders);
+    border-radius: 8px;
+    padding: 0 12px;
+    transition: border-color 0.2s ease;
+
+    &:focus-within {
+        border-color: var(--theme-primary);
+    }
+}
+
+i.portfolio-search-icon {
+    color: var(--theme-texts-light-2);
+    font-size: 0.85rem;
+    flex-shrink: 0;
+    margin-right: 10px;
+    pointer-events: none;
+}
+
+input.portfolio-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--theme-texts);
+    font-size: 0.875rem;
+    padding: 10px 0;
+
+    &::placeholder {
+        color: var(--theme-texts-light-2);
+    }
+
+    /* Remove the browser-native ×  from type="search" */
+    &::-webkit-search-cancel-button { display: none; }
+    &::-ms-clear               { display: none; }
+}
+
+button.portfolio-search-clear {
+    background: none;
+    border: none;
+    padding: 4px 6px;
+    cursor: pointer;
+    color: var(--theme-texts-light-2);
+    font-size: 0.85rem;
+    border-radius: 4px;
+    flex-shrink: 0;
+    transition: color 0.15s ease;
+    line-height: 1;
+
+    &:hover { color: var(--theme-primary); }
+}
+
+/** ============================================================
+    PORTFOLIO EMPTY STATE
+    ============================================================ */
+
+div.portfolio-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 48px 24px;
+    text-align: center;
+
+    i.portfolio-empty-state-icon {
+        font-size: 2.5rem;
+        color: var(--theme-texts-light-2);
+    }
+
+    p.portfolio-empty-state-message {
+        color: var(--theme-texts-light-1);
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    button.portfolio-empty-state-reset {
+        color: var(--theme-primary);
+        background: none;
+        border: 1.5px solid var(--theme-primary);
+        border-radius: 6px;
+        padding: 6px 16px;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: background-color 0.15s ease, color 0.15s ease;
+
+        &:hover {
+            background-color: var(--theme-primary);
+            color: var(--theme-boards-background);
+        }
+    }
+}
+
+/** ============================================================
+    PORTFOLIO ITEMS GRID
+    ============================================================ */
+
 div.article-portfolio-items {
     --item-gap: 40px;
     --padding: 25px 25px 25px;

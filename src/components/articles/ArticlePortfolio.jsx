@@ -1,5 +1,5 @@
 import "./ArticlePortfolio.scss"
-import React, {useEffect, useState} from 'react'
+import React, {useCallback, useEffect, useRef, useState} from 'react'
 import Article from "/src/components/articles/base/Article.jsx"
 import Transitionable from "/src/components/capabilities/Transitionable.jsx"
 import {useViewport} from "/src/providers/ViewportProvider.jsx"
@@ -8,6 +8,8 @@ import AvatarView from "/src/components/generic/AvatarView.jsx"
 import {Tag, Tags} from "/src/components/generic/Tags.jsx"
 import ArticleItemPreviewMenu from "/src/components/articles/partials/ArticleItemPreviewMenu.jsx"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
+import PortfolioSearchBar from "/src/components/articles/PortfolioSearchBar.jsx"
+import {filterItemsBySearch} from "/src/utils/portfolioSearch.js"
 
 /**
  * @param {ArticleDataWrapper} dataWrapper
@@ -42,40 +44,100 @@ function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId }) {
     const language = useLanguage()
     const viewport = useViewport()
 
-    const filteredItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
-    const customBreakpoint = viewport.getCustomBreakpoint(constants.SWIPER_BREAKPOINTS_FOR_THREE_SLIDES)
+    const [searchQuery, setSearchQuery] = useState('')
+    const [debouncedQuery, setDebouncedQuery] = useState('')
+    const searchInputRef = useRef(null)
 
+    // Reset search whenever the active category changes
+    useEffect(() => {
+        setSearchQuery('')
+        setDebouncedQuery('')
+    }, [selectedItemCategoryId])
+
+    // Debounce: commit query to state 300 ms after the user stops typing
+    useEffect(() => {
+        const timer = setTimeout(() => setDebouncedQuery(searchQuery), 300)
+        return () => clearTimeout(timer)
+    }, [searchQuery])
+
+    const handleClear = useCallback(() => {
+        setSearchQuery('')
+        searchInputRef.current?.focus()
+    }, [])
+
+    const categoryItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
+    const displayItems  = filterItemsBySearch(categoryItems, debouncedQuery)
+
+    const customBreakpoint = viewport.getCustomBreakpoint(constants.SWIPER_BREAKPOINTS_FOR_THREE_SLIDES)
     const itemsPerRow = customBreakpoint?.slidesPerView || 1
     const itemsPerRowClass = `article-portfolio-items-${itemsPerRow}-per-row`
 
-    const refreshFlag = dataWrapper.categories?.length ?
-        selectedItemCategoryId + "-" + language.getSelectedLanguage()?.id :
-        language.getSelectedLanguage()?.id
+    const refreshFlag = dataWrapper.categories?.length
+        ? selectedItemCategoryId + '-' + language.getSelectedLanguage()?.id
+        : language.getSelectedLanguage()?.id
 
-    if(dataWrapper.categories?.length) {
-        return (
-            <Transitionable id={dataWrapper.uniqueId}
-                            refreshFlag={refreshFlag}
-                            delayBetweenItems={100}
-                            animation={Transitionable.Animations.POP}
-                            className={`article-portfolio-items ${itemsPerRowClass}`}>
-                {filteredItems.map((itemWrapper, key) => (
-                    <ArticlePortfolioItem itemWrapper={itemWrapper}
-                                          key={key}/>
-                ))}
-            </Transitionable>
-        )
-    }
-    else {
-        return (
-            <div className={`article-portfolio-items ${itemsPerRowClass} mb-3 mb-lg-2`}>
-                {filteredItems.map((itemWrapper, key) => (
-                    <ArticlePortfolioItem itemWrapper={itemWrapper}
-                                          key={key}/>
-                ))}
-            </div>
-        )
-    }
+    const resultCount = debouncedQuery
+        ? `${displayItems.length} project${displayItems.length !== 1 ? 's' : ''} found`
+        : ''
+
+    const showSearchBar = Boolean(dataWrapper.categories?.length)
+
+    return (
+        <>
+            {showSearchBar && (
+                <PortfolioSearchBar
+                    value={searchQuery}
+                    onChange={e => setSearchQuery(e.target.value)}
+                    onClear={handleClear}
+                    inputRef={searchInputRef}
+                    resultCount={resultCount}
+                />
+            )}
+
+            {displayItems.length === 0 && debouncedQuery ? (
+                <PortfolioEmptyState query={debouncedQuery} onReset={handleClear} />
+            ) : dataWrapper.categories?.length ? (
+                <Transitionable id={dataWrapper.uniqueId}
+                                refreshFlag={refreshFlag + '-' + debouncedQuery}
+                                delayBetweenItems={100}
+                                animation={Transitionable.Animations.POP}
+                                className={`article-portfolio-items ${itemsPerRowClass}`}>
+                    {displayItems.map((itemWrapper, key) => (
+                        <ArticlePortfolioItem itemWrapper={itemWrapper} key={key} />
+                    ))}
+                </Transitionable>
+            ) : (
+                <div className={`article-portfolio-items ${itemsPerRowClass} mb-3 mb-lg-2`}>
+                    {displayItems.map((itemWrapper, key) => (
+                        <ArticlePortfolioItem itemWrapper={itemWrapper} key={key} />
+                    ))}
+                </div>
+            )}
+        </>
+    )
+}
+
+/**
+ * @param {string}   query
+ * @param {Function} onReset
+ * @return {JSX.Element}
+ */
+function PortfolioEmptyState({ query, onReset }) {
+    return (
+        <div className="portfolio-empty-state" role="alert">
+            <i className="fa-regular fa-folder-open portfolio-empty-state-icon" aria-hidden="true" />
+            <p className="portfolio-empty-state-message">
+                No projects found for <strong>&ldquo;{query}&rdquo;</strong>
+            </p>
+            <button
+                type="button"
+                className="portfolio-empty-state-reset btn text-2"
+                onClick={onReset}
+            >
+                Clear search
+            </button>
+        </div>
+    )
 }
 
 /**

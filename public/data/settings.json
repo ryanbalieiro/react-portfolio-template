@@ -8,8 +8,8 @@
 
     "preloaderSettings": {
         "enabled": true,
-        "title": "React <strong>Portfolio</strong>",
-        "subtitle": "by Ryan Balieiro",
+        "title": "Tran Xuan <strong>Truong</strong>",
+        "subtitle": "Full-Stack Developer Portfolio",
         "logoOffset": {
             "right": 14,
             "top": 2,
@@ -31,21 +31,6 @@
             "name": "English",
             "id": "en",
             "flagUrl": "images/flags/en-us.png"
-        },
-        {
-            "name": "Español",
-            "id": "es",
-            "flagUrl": "images/flags/es.png"
-        },
-        {
-            "name": "Français",
-            "id": "fr",
-            "flagUrl": "images/flags/fr.png"
-        },
-        {
-            "name": "한국어",
-            "id": "ko",
-            "flagUrl": "images/flags/ko.png"
         }
     ],
 

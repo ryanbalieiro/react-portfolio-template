@@ -1,5 +1,5 @@
 {
-    "name": "Mark Choi",
+    "name": "Tran Xuan Truong",
 
     "profilePictureUrl": "images/pictures/profile-picture.jpg",
     "resumePdfUrl": "",
@@ -10,48 +10,17 @@
 
     "locales": {
         "en": {
-            "localized_name": "Mark Choi",
-            "localized_name_stylized": " [[Mark {{Choi}}]]",
-            "status_message_available_for_freelance": "Available for freelance!",
+            "localized_name": "Tran Xuan Truong",
+            "localized_name_stylized": " [[Tran Xuan {{Truong}}]]",
+            "status_message_available_for_freelance": "Open to interesting work!",
             "roles": [
-                "Backend Developer",
-                "Frontend Developer",
-                "DevOps Engineer",
-                "UX Designer"
+                "Full-Stack Developer",
+                "Ruby on Rails Engineer",
+                "JavaScript / TypeScript Developer",
+                "React Native Developer"
             ],
-            "name_pronunciation_ipa": "/mark chwe/",
-            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
-        },
-        "es": {
-            "status_message_available_for_freelance": "¡Disponible para freelance!",
-            "roles": [
-                "Desarrollador Backend",
-                "Desarrollador Frontend",
-                "Ingeniero DevOps",
-                "Diseñador UX"
-            ]
-        },
-        "fr": {
-            "status_message_available_for_freelance": "Disponible pour freelance !",
-            "roles": [
-                "Développeur Backend",
-                "Développeur Frontend",
-                "Ingénieur DevOps",
-                "Designer UX"
-            ]
-        },
-        "ko": {
-            "localized_name": "최민석",
-            "localized_name_stylized": "{{최}}민석",
-            "status_message_available_for_freelance": "프리랜스 가능합니다!",
-            "roles": [
-                "백엔드 개발자",
-                "프론트엔드 개발자",
-                "데브옵스 엔지니어",
-                "UX 디자이너"
-            ],
-            "name_pronunciation_ipa": "/chwe min-seok/",
-            "name_pronunciation_audio_url": "audio/korean-name-pronunciation.mp3"
+            "name_pronunciation_ipa": "",
+            "name_pronunciation_audio_url": ""
         }
     }
 }

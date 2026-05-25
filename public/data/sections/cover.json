@@ -5,7 +5,7 @@
                 "title_short": "Welcome!",
                 "title_short_nav": "About me",
                 "title_long_prefix": "Hello...",
-                "title_long": "I'm {{Mark Choi!}}"
+                "title_long": "I'm {{Tran Xuan Truong}}"
             },
             "es": {
                 "title_short": "¡Saludos!",
@@ -41,20 +41,20 @@
             "items": [
                 {
                     "id": 1,
-                    "label": "Cupertino – CA",
+                    "label": "Hanoi, Vietnam",
                     "link": {"href": "", "tooltipString": ""},
                     "faIcon": "pi pi-map-marker"
                 },
                 {
                     "id": 2,
-                    "label": "mark.choi@dev.com",
-                    "link": {"href": "mailto:mark.choi@dev.com", "tooltipString": "email_me"},
+                    "label": "truongtx@zigexn.vn",
+                    "link": {"href": "mailto:truongtx@zigexn.vn", "tooltipString": "email_me"},
                     "faIcon": "fa-regular fa-envelope"
                 },
                 {
                     "id": 3,
-                    "label": "@ryanbalieiro",
-                    "link": {"href": "https://github.com/ryanbalieiro", "tooltipString": "see_on_github"},
+                    "label": "@truongtx-zigexn",
+                    "link": {"href": "https://github.com/truongtx-zigexn", "tooltipString": "see_on_github"},
                     "faIcon": "fa-brands fa-github"
                 }
             ]
@@ -81,7 +81,7 @@
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "text": "<p>I’m a {{PHP}} developer with [[over a decade]] of experience, specializing in backend development with some frontend work as well. I also have hands-on experience with C++, C#, Go, and Python in production environments.</p><p>This diverse background gives me the flexibility to adapt to a wide range of project needs, whether it's building scalable APIs, optimizing system performance, or contributing to full-stack solutions.</p><p>I look forward to collaborating [[with you!]]</p>"
+                            "text": "<p>I’m a {{Full-Stack Developer}} based in Hanoi, working on [[used-car marketplace]] products at zigexn — primarily with {{Ruby on Rails}} on the backend and modern JavaScript/TypeScript on the frontend.</p><p>I care about shipping features that solve [[real user problems]] while keeping the codebase healthy enough for the next person to extend. Day-to-day that means writing clear code, reading other people’s code well, and treating tests, Docker, and CI as first-class tools rather than chores.</p><p>I'm currently expanding into {{React Native}} and cloud infrastructure on GCP, and I'm always glad to collaborate [[with people who care about the product]] as much as the stack.</p>"
                         },
                         "es": {
                             "text": "<p>Soy un desarrollador de {{PHP}} con [[más de una década]] de experiencia, especializado en desarrollo backend y con algo de experiencia en frontend. También tengo experiencia práctica en entornos de producción con C++, C#, Go y Python.</p><p>Este variado historial me permite adaptarme a una amplia gama de necesidades de proyectos, ya sea construyendo APIs escalables, optimizando el rendimiento de sistemas o contribuyendo a soluciones full-stack.</p><p>¡Espero con interés colaborar [[contigo!]]</p>"

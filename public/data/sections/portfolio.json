@@ -61,367 +61,210 @@
             "settings": {
                 "categorize_by": ["category_apps", "category_web", "category_utilities"],
                 "order_items_by": "id",
-                "order_items_sort": "asc"
+                "order_items_sort": "desc"
             },
             "items": [
                 {
                     "id": 1,
-                    "categoryId": "category_utilities",
-                    "img": "images/pictures/portfolio-project-logo-3.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-graduation-cap",
+                    "faIconColors": {"bg": "#E0234E", "fill": "#FFFFFF"},
                     "preview": {
                         "links": [
-                            {"href": "https://github.com", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"},
-                            {"href": "https://npm.com", "tooltipString": "see_on_npm", "faIcon": "fa-brands fa-npm"}
+                            {"href": "https://github.com/nhandang02", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
-                        "screenshots": [
-                            "images/pictures/screenshot-demo-landscape-1.png",
-                            "images/pictures/screenshot-demo-landscape-2.png",
-                            "images/pictures/screenshot-demo-landscape-3.png",
-                            "images/pictures/screenshot-demo-landscape-4.png",
-                            "images/pictures/screenshot-demo-landscape-5.png"
-                        ],
-                        "screenshotsAspectRatio": "16:9",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=PnV8p1xm7-o"
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "BrainPulse",
-                            "text": "A <b>RESTful API</b> backend built with <b>Node.js</b>, designed for high-performance data processing and real-time event handling.",
-                            "tags": ["API", "REST", "Backend"]
+                            "title": "E-Learning Classroom",
+                            "text": "A <b>cross-platform E-Learning app</b> (Web, Android, Windows) built with <b>Flutter (Dart)</b>, featuring real-time interactions via <b>Socket.IO</b>, AI question generation, PWA support, and Dark Mode. Completed all 36/36 required features.",
+                            "tags": ["Flutter", "Dart", "Cross-Platform", "PWA"]
                         },
                         "es": {
-                            "text": "Una <b>API RESTful</b> construida con <b>Node.js</b>, diseñada para el procesamiento de datos de alto rendimiento y la gestión de eventos en tiempo real.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "Una app de E-Learning <b>multiplataforma</b> (Web, Android, Windows) con <b>Flutter (Dart)</b>, interacciones en tiempo real vía <b>Socket.IO</b>, generación de preguntas con IA y soporte PWA.",
+                            "tags": ["Flutter", "Dart", "Multiplataforma", "PWA"]
                         },
                         "fr": {
-                            "text": "Un backend <b>API RESTful</b> construit avec <b>Node.js</b>, conçu pour le traitement de données haute performance et la gestion d'événements en temps réel.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "Une application E-Learning <b>multiplateforme</b> (Web, Android, Windows) avec <b>Flutter (Dart)</b>, interactions en temps réel via <b>Socket.IO</b>, génération de questions IA et support PWA.",
+                            "tags": ["Flutter", "Dart", "Multiplateforme", "PWA"]
                         },
                         "ko": {
-                            "text": "<b>Node.js</b>로 구축된 <b>RESTful API</b> 백엔드로, 고성능 데이터 처리 및 실시간 이벤트 처리용으로 설계되었습니다.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "<b>Flutter (Dart)</b>로 구축된 크로스 플랫폼 E-Learning 앱(Web, Android, Windows)으로 <b>Socket.IO</b> 실시간 상호작용, AI 문제 생성, PWA 지원 포함.",
+                            "tags": ["Flutter", "Dart", "크로스 플랫폼", "PWA"]
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-7.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "categoryId": "category_utilities",
+                    "img": "",
+                    "faIcon": "fa-solid fa-server",
+                    "faIconColors": {"bg": "#1a1a2e", "fill": "#E0234E"},
                     "preview": {
                         "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
+                            {"href": "https://github.com/nhandang02", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
-                        "screenshots": [
-                            "images/pictures/screenshot-demo-portrait-1.png",
-                            "images/pictures/screenshot-demo-portrait-2.png",
-                            "images/pictures/screenshot-demo-portrait-3.png",
-                            "images/pictures/screenshot-demo-portrait-4.png",
-                            "images/pictures/screenshot-demo-portrait-5.png",
-                            "images/pictures/screenshot-demo-portrait-6.png"
-                        ],
-                        "screenshotsAspectRatio": "9:16",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=TfgBHC5gvTI"
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "MailM8",
-                            "text": "A cross-platform email client built with <b>Flutter</b>, providing efficient communication with an intuitive UI for <b>managing emails</b>.",
-                            "tags": ["Flutter", "E-mail", "Communication"]
+                            "title": "E-Learning Backend API",
+                            "text": "A <b>NestJS + PostgreSQL</b> backend with <b>JWT authentication</b>, Socket.IO for real-time features, deployed on <b>Google Cloud VM</b> with Cloudflare CDN, and CI/CD via <b>GitHub Actions</b>.",
+                            "tags": ["NestJS", "PostgreSQL", "GCP", "Socket.IO"]
                         },
                         "es": {
-                            "text": "Un cliente de correo electrónico multiplataforma construido con <b>Flutter</b>, que ofrece comunicación eficiente y una interfaz intuitiva para la <b>gestión de correos electrónicos</b>.",
-                            "tags": ["Flutter", "Correo", "Comunicación"]
+                            "text": "Backend <b>NestJS + PostgreSQL</b> con autenticación <b>JWT</b>, Socket.IO para funciones en tiempo real, desplegado en <b>Google Cloud VM</b> con Cloudflare CDN.",
+                            "tags": ["NestJS", "PostgreSQL", "GCP", "Socket.IO"]
                         },
                         "fr": {
-                            "text": "Un client de messagerie multiplateforme construit avec <b>Flutter</b>, offrant une communication efficace et une interface intuitive pour <b>gérer les e-mails</b>.",
-                            "tags": ["Flutter", "E-mail", "Communication"]
+                            "text": "Backend <b>NestJS + PostgreSQL</b> avec authentification <b>JWT</b>, Socket.IO pour les fonctionnalités en temps réel, déployé sur <b>Google Cloud VM</b> avec Cloudflare CDN.",
+                            "tags": ["NestJS", "PostgreSQL", "GCP", "Socket.IO"]
                         },
                         "ko": {
-                            "text": "<b>Flutter</b>로 구축된 크로스플랫폼 이메일 클라이언트로, 이메일 <b>관리</b>를 위한 직관적인 UI를 통해 효율적인 소통을 제공합니다.",
-                            "tags": ["Flutter", "이메일", "소통"]
+                            "text": "<b>JWT 인증</b>과 Socket.IO 실시간 기능을 갖춘 <b>NestJS + PostgreSQL</b> 백엔드로 Cloudflare CDN과 함께 <b>Google Cloud VM</b>에 배포.",
+                            "tags": ["NestJS", "PostgreSQL", "GCP", "Socket.IO"]
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-6.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-solid fa-building-columns",
+                    "faIconColors": {"bg": "#0f3460", "fill": "#00d4ff"},
                     "preview": {
                         "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
+                            {"href": "https://github.com/nhandang02", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
-                        "screenshots": [
-                            "images/pictures/screenshot-demo-landscape-1.png",
-                            "images/pictures/screenshot-demo-landscape-2.png",
-                            "images/pictures/screenshot-demo-landscape-3.png",
-                            "images/pictures/screenshot-demo-landscape-4.png",
-                            "images/pictures/screenshot-demo-landscape-5.png"
-                        ],
-                        "screenshotsAspectRatio": "16:9",
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
                         "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "Light Blue",
-                            "text": "A fully-featured productivity app developed with <b>React Native</b>, enabling users to organize tasks, notes, and projects across multiple devices. It offers <b>cloud sync</b>, intuitive UI, and collaboration features.",
-                            "tags": ["React", "Organization", "Notes"]
+                            "title": "iBanking – Tuition Payment",
+                            "text": "A tuition payment web app built with <b>Next.js 15</b>, TypeScript, and Tailwind CSS, featuring secure <b>JWT authentication</b>, OTP verification via email, guided payment flow, and automatic token refresh.",
+                            "tags": ["Next.js", "TypeScript", "Tailwind CSS", "OTP"]
                         },
                         "es": {
-                            "text": "Una app de productividad con todas las funciones, desarrollada con <b>React Native</b>, que permite a los usuarios organizar tareas, notas y proyectos en varios dispositivos. Ofrece <b>sincronización en la nube</b>, interfaz intuitiva y características de colaboración.",
-                            "tags": ["React", "Organización", "Notas"]
+                            "text": "App web de pago de matrícula con <b>Next.js 15</b>, TypeScript y Tailwind CSS, con <b>autenticación JWT</b> segura, verificación OTP por correo y flujo de pago guiado.",
+                            "tags": ["Next.js", "TypeScript", "Tailwind CSS", "OTP"]
                         },
                         "fr": {
-                            "text": "Une application de productivité complète développée avec <b>React Native</b>, permettant aux utilisateurs d'organiser tâches, notes et projets sur plusieurs appareils. Elle offre <b>synchronisation cloud</b>, interface intuitive et fonctionnalités de collaboration.",
-                            "tags": ["React", "Organisation", "Notes"]
+                            "text": "Application web de paiement de frais de scolarité avec <b>Next.js 15</b>, TypeScript et Tailwind CSS, avec <b>authentification JWT</b> sécurisée, vérification OTP par email et flux de paiement guidé.",
+                            "tags": ["Next.js", "TypeScript", "Tailwind CSS", "OTP"]
                         },
                         "ko": {
-                            "text": "<b>React Native</b>로 개발된 기능이 풍부한 생산성 앱으로, 사용자가 여러 기기에서 작업, 메모, 프로젝트를 <b>클라우드 동기화</b>와 직관적인 UI로 관리할 수 있습니다.",
-                            "tags": ["React", "조직", "메모"]
+                            "text": "<b>Next.js 15</b>, TypeScript, Tailwind CSS로 구축된 등록금 결제 웹 앱으로 안전한 <b>JWT 인증</b>, 이메일 OTP 인증, 안내식 결제 흐름을 포함.",
+                            "tags": ["Next.js", "TypeScript", "Tailwind CSS", "OTP"]
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "categoryId": "category_web",
-                    "img": "images/pictures/portfolio-project-logo-1.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "categoryId": "category_utilities",
+                    "img": "",
+                    "faIcon": "fa-solid fa-circle-nodes",
+                    "faIconColors": {"bg": "#16213e", "fill": "#FF6600"},
                     "preview": {
                         "links": [
-                            {"href": "https://cash.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                            {"href": "https://github.com/nhandang02", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
-                        "screenshots": [
-
-                        ],
+                        "screenshots": [],
                         "screenshotsAspectRatio": "",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=MQe_MoJ7Iww"
+                        "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "SmartCash",
-                            "text": "A finance website built using <b>Next.js</b>, allowing users to <b>track budgets</b> and manage their money with interactive charts and insights.",
-                            "tags": ["Next.js", "Finance", "Money"]
+                            "title": "iBanking Microservices",
+                            "text": "A <b>NestJS microservices</b> backend using PostgreSQL, <b>RabbitMQ</b>, Redis, and the <b>Saga pattern</b> for reliable payment orchestration, with email OTP delivery and Docker Compose containerization.",
+                            "tags": ["NestJS", "RabbitMQ", "Redis", "Microservices"]
                         },
                         "es": {
-                            "title": "SmartCash",
-                            "text": "Un sitio web financiero construido con <b>Next.js</b>, que permite a los usuarios <b>seguir presupuestos</b> y gestionar su dinero con gráficos interactivos e ideas.",
-                            "tags": ["Next.js", "Finanzas", "Dinero"]
+                            "text": "Backend de <b>microservicios NestJS</b> usando PostgreSQL, <b>RabbitMQ</b>, Redis y el <b>patrón Saga</b> para orquestación de pagos, con entrega OTP por correo y conteneurización con Docker Compose.",
+                            "tags": ["NestJS", "RabbitMQ", "Redis", "Microservicios"]
                         },
                         "fr": {
-                            "title": "SmartCash",
-                            "text": "Un site web financier construit avec <b>Next.js</b>, permettant aux utilisateurs de <b>suivre les budgets</b> et de gérer leur argent avec des graphiques interactifs et des analyses.",
-                            "tags": ["Next.js", "Finance", "Argent"]
+                            "text": "Backend <b>microservices NestJS</b> utilisant PostgreSQL, <b>RabbitMQ</b>, Redis et le <b>pattern Saga</b> pour l'orchestration de paiements, avec livraison OTP par email et conteneurisation Docker Compose.",
+                            "tags": ["NestJS", "RabbitMQ", "Redis", "Microservices"]
                         },
                         "ko": {
-                            "title": "SmartCash",
-                            "text": "<b>Next.js</b>로 구축된 금융 웹사이트로, 사용자가 <b>예산을 추적</b>하고 상호작용하는 차트와 통찰력으로 자금을 관리할 수 있습니다.",
-                            "tags": ["Next.js", "금융", "돈"]
+                            "text": "PostgreSQL, <b>RabbitMQ</b>, Redis와 안정적인 결제 오케스트레이션을 위한 <b>Saga 패턴</b>을 사용하는 <b>NestJS 마이크로서비스</b> 백엔드.",
+                            "tags": ["NestJS", "RabbitMQ", "Redis", "마이크로서비스"]
                         }
                     }
                 },
                 {
                     "id": 5,
                     "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-2.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "img": "",
+                    "faIcon": "fa-solid fa-utensils",
+                    "faIconColors": {"bg": "#2d6a4f", "fill": "#FFFFFF"},
                     "preview": {
                         "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
+                            {"href": "https://github.com/nhandang02", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
-                        "screenshots": [
-
-                        ],
+                        "screenshots": [],
                         "screenshotsAspectRatio": "",
                         "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "Snappy",
-                            "text": "A powerful photography app designed with <b>Swift</b> for iOS and Android, featuring <b>advanced camera controls</b>, editing tools, and AI-powered filters for quick photo enhancements.",
-                            "tags": ["Swift", "Photography", "Camera"]
+                            "title": "Restaurant Ordering App",
+                            "text": "A <b>Zalo Mini App</b> for restaurant customers built with <b>Vue.js 3</b> and Zalo UI, featuring JWT authentication, <b>real-time order tracking</b> via WebSocket, and role-based access control with CASL.",
+                            "tags": ["Vue.js 3", "Zalo", "WebSocket", "CASL"]
                         },
                         "es": {
-                            "title": "Snappy",
-                            "text": "Una app de fotografía potente diseñada con <b>Swift</b> para iOS y Android, con <b>controles avanzados de cámara</b>, herramientas de edición y filtros potenciados por IA para mejoras rápidas de fotos.",
-                            "tags": ["Swift", "Fotografía", "Cámara"]
+                            "text": "Una <b>Zalo Mini App</b> para clientes de restaurantes con <b>Vue.js 3</b> y Zalo UI, con autenticación JWT, <b>seguimiento de pedidos en tiempo real</b> vía WebSocket y control de acceso con CASL.",
+                            "tags": ["Vue.js 3", "Zalo", "WebSocket", "CASL"]
                         },
                         "fr": {
-                            "title": "Snappy",
-                            "text": "Une application de photographie puissante conçue avec <b>Swift</b> pour iOS et Android, avec des <b>contrôles avancés de la caméra</b>, des outils d'édition et des filtres IA pour des améliorations rapides des photos.",
-                            "tags": ["Swift", "Photographie", "Caméra"]
+                            "text": "Une <b>Zalo Mini App</b> pour les clients de restaurant avec <b>Vue.js 3</b> et Zalo UI, avec authentification JWT, <b>suivi de commande en temps réel</b> via WebSocket et contrôle d'accès CASL.",
+                            "tags": ["Vue.js 3", "Zalo", "WebSocket", "CASL"]
                         },
                         "ko": {
-                            "title": "Snappy",
-                            "text": "<b>Swift</b>로 설계된 강력한 사진 앱으로, iOS 및 Android에서 <b>고급 카메라 제어</b>, 편집 도구, AI 기반 필터를 통해 빠르게 사진을 보정할 수 있습니다.",
-                            "tags": ["Swift", "사진", "카메라"]
+                            "text": "<b>Vue.js 3</b>와 Zalo UI로 구축된 레스토랑 고객용 <b>Zalo Mini App</b>으로 JWT 인증, WebSocket 실시간 주문 추적, CASL 역할 기반 접근 제어 포함.",
+                            "tags": ["Vue.js 3", "Zalo", "WebSocket", "CASL"]
                         }
                     }
                 },
                 {
                     "id": 6,
                     "categoryId": "category_web",
-                    "img": "images/pictures/portfolio-project-logo-5.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-                            {"href": "https://google.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Sweet Scoops",
-                            "text": "A recipe website built with <b>WordPress</b> and WooCommerce, featuring a rich collection of <b>dessert recipes</b> and an integrated e-commerce platform.",
-                            "tags": ["WooCommerce", "Food", "Desserts"]
-                        },
-                        "es": {
-                            "title": "Sweet Scoops",
-                            "text": "Un sitio web de recetas construido con <b>WordPress</b> y WooCommerce, con una rica colección de <b>recetas de postres</b> y una plataforma de comercio electrónico integrada.",
-                            "tags": ["WooCommerce", "Comida", "Postres"]
-                        },
-                        "fr": {
-                            "title": "Sweet Scoops",
-                            "text": "Un site de recettes construit avec <b>WordPress</b> et WooCommerce, présentant une riche collection de <b>recettes de desserts</b> et une plateforme de commerce électronique intégrée.",
-                            "tags": ["WooCommerce", "Cuisine", "Desserts"]
-                        },
-                        "ko": {
-                            "title": "Sweet Scoops",
-                            "text": "<b>WordPress</b>와 WooCommerce로 구축된 레시피 웹사이트로, 풍부한 <b>디저트 레시피</b> 모음과 통합된 전자상거래 플랫폼을 제공합니다.",
-                            "tags": ["WooCommerce", "음식", "디저트"]
-                        }
-                    }
-                },
-                {
-                    "id": 7,
-                    "categoryId": "category_web",
                     "img": "",
-                    "faIcon": "fa-solid fa-guitar",
-                    "faIconColors": {"bg": "#7671AA", "fill": "#EEEEEE"},
+                    "faIcon": "fa-solid fa-gauge-high",
+                    "faIconColors": {"bg": "#1a1a2e", "fill": "#4FC08D"},
                     "preview": {
                         "links": [
-                            {"href": "https://google.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                            {"href": "https://github.com/nhandang02", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
-                        "screenshots": [
-
-                        ],
+                        "screenshots": [],
                         "screenshotsAspectRatio": "",
                         "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "RockVerse",
-                            "text": "A dynamic music and entertainment website developed with <b>Django</b>, showcasing rock music news, events, and <b>streaming content</b>.",
-                            "tags": ["Django", "Music", "Rock"]
+                            "title": "Restaurant Admin Dashboard",
+                            "text": "An admin dashboard built with <b>Next.js 15</b> for the restaurant management system, with <b>VNPay payment integration</b>, automatic QR code generation, webhook callbacks, Socket.IO, and CI/CD via GitHub Actions.",
+                            "tags": ["Next.js", "VNPay", "Socket.IO", "Docker"]
                         },
                         "es": {
-                            "title": "RockVerse",
-                            "text": "Un sitio web dinámico de música y entretenimiento desarrollado con <b>Django</b>, que muestra noticias de música rock, eventos y <b>contenido en streaming</b>.",
-                            "tags": ["Django", "Música", "Rock"]
+                            "text": "Dashboard de administración con <b>Next.js 15</b> para el sistema de gestión de restaurantes, con <b>integración de pagos VNPay</b>, generación automática de QR, webhooks y Socket.IO.",
+                            "tags": ["Next.js", "VNPay", "Socket.IO", "Docker"]
                         },
                         "fr": {
-                            "title": "RockVerse",
-                            "text": "Un site web de musique et de divertissement dynamique développé avec <b>Django</b>, mettant en avant des nouvelles, événements et <b>contenu en streaming</b> sur le rock.",
-                            "tags": ["Django", "Musique", "Rock"]
+                            "text": "Tableau de bord admin avec <b>Next.js 15</b> pour le système de gestion de restaurant, avec <b>intégration de paiement VNPay</b>, génération automatique de QR, callbacks webhook et Socket.IO.",
+                            "tags": ["Next.js", "VNPay", "Socket.IO", "Docker"]
                         },
                         "ko": {
-                            "title": "RockVerse",
-                            "text": "<b>Django</b>로 개발된 동적인 음악 및 엔터테인먼트 웹사이트로, 록 음악 뉴스, 이벤트 및 <b>스트리밍 콘텐츠</b>를 제공합니다.",
-                            "tags": ["Django", "음악", "록"]
-                        }
-                    }
-                },
-                {
-                    "id": 8,
-                    "categoryId": "category_utilities",
-                    "img": "images/pictures/portfolio-project-logo-4.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=bf3Lz33nHy0"
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Soccer Analytics",
-                            "text": "An AI-powered sports analytics platform built with <b>Python</b> and <b>TensorFlow</b>, offering detailed soccer <b>predictions</b> and team management tools.",
-                            "tags": ["AI", "Prediction", "Soccer"]
-                        },
-                        "es": {
-                            "title": "Soccer Analytics",
-                            "text": "Una plataforma de análisis deportivo impulsada por IA construida con <b>Python</b> y <b>TensorFlow</b>, que ofrece <b>predicciones</b> detalladas de fútbol y herramientas de gestión de equipos.",
-                            "tags": ["IA", "Predicción", "Fútbol"]
-                        },
-                        "fr": {
-                            "title": "Soccer Analytics",
-                            "text": "Une plateforme d'analytique sportive alimentée par IA construite avec <b>Python</b> et <b>TensorFlow</b>, offrant des <b>prédictions</b> détaillées pour le football et des outils de gestion d'équipe.",
-                            "tags": ["IA", "Prédiction", "Football"]
-                        },
-                        "ko": {
-                            "title": "Soccer Analytics",
-                            "text": "<b>Python</b> 및 <b>TensorFlow</b>로 구축된 AI 기반 스포츠 분석 플랫폼으로, 축구에 대한 <b>예측</b> 및 팀 관리 도구를 제공합니다.",
-                            "tags": ["AI", "예측", "축구"]
-                        }
-                    }
-                },
-                {
-                    "id": 9,
-                    "categoryId": "category_apps",
-                    "img": "",
-                    "faIcon": "fa-solid fa-truck-fast",
-                    "faIconColors": {"bg": "#007396", "fill": "#EEEEEE"},
-                    "preview": {
-                        "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://windows.com", "tooltipString": "see_on_windows_store", "faIcon": "fa-brands fa-windows"}
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "QuickDrop",
-                            "text": "A cross-platform delivery app built with <b>React Native</b> and a <b>Node.js backend</b>, featuring <b>real-time tracking</b> and seamless integration with multiple platforms.",
-                            "tags": ["React Native", "Delivery", "Real-Time Tracking"]
-                        },
-                        "es": {
-                            "title": "QuickDrop",
-                            "text": "Una app de entregas multiplataforma construida con <b>React Native</b> y un backend de <b>Node.js</b>, con <b>seguimiento en tiempo real</b> e integración perfecta en múltiples plataformas.",
-                            "tags": ["React Native", "Entrega", "Seguimiento"]
-                        },
-                        "fr": {
-                            "title": "QuickDrop",
-                            "text": "Une application de livraison multiplateforme construite avec <b>React Native</b> et un backend <b>Node.js</b>, avec <b>suivi en temps réel</b> et intégration fluide sur plusieurs plateformes.",
-                            "tags": ["React Native", "Livraison", "Suivi"]
-                        },
-                        "ko": {
-                            "title": "QuickDrop",
-                            "text": "<b>React Native</b>와 <b>Node.js</b> 백엔드로 구축된 크로스플랫폼 배송 앱으로, <b>실시간 추적</b> 및 여러 플랫폼과의 원활한 통합을 제공합니다.",
-                            "tags": ["React Native", "배송", "실시간 추적"]
+                            "text": "레스토랑 관리 시스템용 <b>Next.js 15</b> 관리자 대시보드로 <b>VNPay 결제 통합</b>, 자동 QR 코드 생성, 웹훅 콜백, Socket.IO 포함.",
+                            "tags": ["Next.js", "VNPay", "Socket.IO", "Docker"]
                         }
                     }
                 }

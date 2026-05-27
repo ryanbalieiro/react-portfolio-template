@@ -191,231 +191,105 @@
                 {
                     "id": 1,
                     "img": "",
-                    "faIcon": "fa-brands fa-node-js",
-                    "faIconColors": {"bg": "", "fill": "#339933"},
-                    "date": {"year": 2019, "month": 3},
-                    "percentage": 95,
+                    "faIcon": "fa-brands fa-php",
+                    "faIconColors": {"bg": "", "fill": "#FFD700", "fillLight": "#4F5B93"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 100,
                     "locales": {
                         "en": {
-                            "title": "Node.js",
-                            "text": "Certified developer by Node.js Foundation.",
+                            "title": "PHP",
+                            "text": "Expert-level PHP developer with strong production experience.",
                             "level": ""
-                        },
-                        "es": {
-                            "text": "Desarrollador certificado por la Fundación Node.js."
-                        },
-                        "fr": {
-                            "text": "Développeur certifié par la Node.js Foundation."
-                        },
-                        "ko": {
-                            "text": "Node.js 재단 인증 개발자."
                         }
                     }
                 },
                 {
                     "id": 2,
                     "img": "",
-                    "faIcon": "fa-brands fa-java",
-                    "faIconColors": {"bg": "", "fill": "#0295c2", "fillLight": "#007396"},
-                    "date": {"year": 2019, "month": 10},
-                    "percentage": 95,
+                    "faIcon": "fa-brands fa-laravel",
+                    "faIconColors": {"bg": "", "fill": "#FF2D20"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 100,
                     "locales": {
                         "en": {
-                            "title": "Java",
-                            "text": "Oracle certified Java developer with a strong understanding of its ecosystem.",
+                            "title": "Laravel",
+                            "text": "Expert in Laravel for building scalable backend applications and REST APIs.",
                             "level": ""
-                        },
-                        "es": {
-                            "text": "Desarrollador de Java certificado por Oracle con un sólido entendimiento de su ecosistema."
-                        },
-                        "fr": {
-                            "text": "Développeur Java certifié Oracle avec une bonne compréhension de son écosystème."
-                        },
-                        "ko": {
-                            "text": "Oracle 인증 Java 개발자로 Java 생태계에 대한 강력한 이해."
                         }
                     }
                 },
                 {
                     "id": 3,
                     "img": "",
-                    "faIcon": "fa-solid fa-gem",
-                    "faIconColors": {"bg": "", "fill": "#CC0000"},
-                    "date": {"year": 2020, "month": 8},
+                    "faIcon": "fa-solid fa-database",
+                    "faIconColors": {"bg": "", "fill": "#4479A1"},
+                    "date": {"year": null, "month": null},
                     "percentage": 80,
                     "locales": {
                         "en": {
-                            "title": "Ruby on Rails",
-                            "text": "Complete understanding of Ruby on Rails for building web applications.",
+                            "title": "MySQL",
+                            "text": "Advanced knowledge of MySQL for relational database design and optimization.",
                             "level": ""
-                        },
-                        "es": {
-                            "text": "Comprensión completa de Ruby on Rails para construir aplicaciones web."
-                        },
-                        "fr": {
-                            "text": "Compréhension complète de Ruby on Rails pour créer des applications web."
-                        },
-                        "ko": {
-                            "text": "웹 애플리케이션 구축을 위한 Ruby on Rails에 대한 완전한 이해."
                         }
                     }
                 },
                 {
                     "id": 4,
                     "img": "",
-                    "faIcon": "fa-solid fa-database",
-                    "faIconColors": {"bg": "", "fill": "#4479A1"},
-                    "date": {"year": 2020, "month": 10},
-                    "percentage": 90,
+                    "faIcon": "fa-solid fa-window-restore",
+                    "faIconColors": {"bg": "", "fill": "#0F62FE"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 80,
                     "locales": {
                         "en": {
-                            "title": "MySQL",
-                            "text": "I can manage and optimize MySQL databases for performance and reliability.",
+                            "title": "REST API",
+                            "text": "Advanced experience designing and building RESTful APIs.",
                             "level": ""
-                        },
-                        "es": {
-                            "text": "Puedo gestionar y optimizar bases de datos MySQL para rendimiento y fiabilidad."
-                        },
-                        "fr": {
-                            "text": "Je peux gérer et optimiser les bases de données MySQL pour la performance et la fiabilité."
-                        },
-                        "ko": {
-                            "text": "성능과 안정성을 위해 MySQL 데이터베이스를 관리하고 최적화할 수 있습니다."
                         }
                     }
                 },
                 {
                     "id": 5,
                     "img": "",
-                    "faIcon": "fa-brands fa-docker",
-                    "faIconColors": {"bg": "", "fill": "#2496ED"},
-                    "date": {"year": 2021, "month": 4},
-                    "percentage": 60,
+                    "faIcon": "fa-brands fa-git",
+                    "faIconColors": {"bg": "", "fill": "#F05032"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 80,
                     "locales": {
                         "en": {
-                            "title": "Docker",
-                            "text": "Working knowledge of Docker for containerization.",
+                            "title": "Git",
+                            "text": "Advanced Git workflows including branching, rebasing, and team collaboration.",
                             "level": ""
-                        },
-                        "es": {
-                            "text": "Conocimientos prácticos de Docker para la contenedorización."
-                        },
-                        "fr": {
-                            "text": "Connaissance pratique de Docker pour la conteneurisation."
-                        },
-                        "ko": {
-                            "text": "컨테이너화를 위한 Docker에 대한 실무 지식."
                         }
                     }
                 },
                 {
                     "id": 6,
                     "img": "",
-                    "faIcon": "fa-brands fa-php",
-                    "faIconColors": {"bg": "", "fill": "#FFD700", "fillLight": "#4F5B93"},
-                    "date": {"year": 2018, "month": 9},
-                    "percentage": 100,
+                    "faIcon": "fa-brands fa-docker",
+                    "faIconColors": {"bg": "", "fill": "#2496ED"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 60,
                     "locales": {
                         "en": {
-                            "title": "PHP 8.0+",
-                            "text": "Strong understanding of PHP and its frameworks.",
+                            "title": "Docker",
+                            "text": "Intermediate experience with Docker for containerization and development workflows.",
                             "level": ""
-                        },
-                        "es": {
-                            "text": "Sólido entendimiento de PHP y sus frameworks."
-                        },
-                        "fr": {
-                            "text": "Bonne compréhension de PHP et de ses frameworks."
-                        },
-                        "ko": {
-                            "text": "PHP 및 그 프레임워크에 대한 강력한 이해."
                         }
                     }
                 },
                 {
                     "id": 7,
                     "img": "",
-                    "faIcon": "fa-brands fa-python",
-                    "faIconColors": {"bg": "", "fill": "#306998"},
-                    "date": {"year": 2020, "month": 6},
-                    "percentage": 85,
+                    "faIcon": "fa-solid fa-infinity",
+                    "faIconColors": {"bg": "", "fill": "#3E863D"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 60,
                     "locales": {
                         "en": {
-                            "title": "Python",
-                            "text": "Data analysis and machine learning with Python.",
+                            "title": "CI/CD",
+                            "text": "Intermediate experience with CI/CD pipelines for automated build and deployment.",
                             "level": ""
-                        },
-                        "es": {
-                            "text": "Análisis de datos y aprendizaje automático con Python."
-                        },
-                        "fr": {
-                            "text": "Analyse de données et apprentissage automatique avec Python."
-                        },
-                        "ko": {
-                            "text": "Python을 사용한 데이터 분석 및 기계 학습."
-                        }
-                    }
-                },
-                {
-                    "id": 8,
-                    "img": "",
-                    "faIcon": "fa-solid fa-life-ring",
-                    "faIconColors": {"bg": "", "fill": "#326CE5"},
-                    "date": {"year": 2021, "month": 7},
-                    "percentage": 80,
-                    "locales": {
-                        "en": {
-                            "title": "Kubernetes",
-                            "text": "Total devotee of Kubernetes for container orchestration and management.",
-                            "level": ""
-                        },
-                        "es": {
-                            "text": "Devoto total de Kubernetes para la orquestación y gestión de contenedores."
-                        },
-                        "fr": {
-                            "text": "Total dévoué à Kubernetes pour l'orchestration et la gestion des conteneurs."
-                        },
-                        "ko": {
-                            "text": "컨테이너 오케스트레이션 및 관리를 위한 Kubernetes의 총 애호가."
-                        }
-                    }
-                },
-                {
-                    "id": 9,
-                    "img": "",
-                    "faIcon": "fa-solid fa-server",
-                    "faIconColors": {"bg": "", "fill": "#47A248"},
-                    "date": {"year": 2024, "month": 5},
-                    "percentage": 50,
-                    "locales": {
-                        "en": {
-                            "title": "MongoDB",
-                            "text": "",
-                            "level": ""
-                        }
-                    }
-                },
-                {
-                    "id": 10,
-                    "img": "",
-                    "faIcon": "fa-brands fa-git",
-                    "faIconColors": {"bg": "", "fill": "#F05032"},
-                    "date": {"year": 2018, "month": 1},
-                    "percentage": 90,
-                    "locales": {
-                        "en": {
-                            "title": "Git",
-                            "text": "Complete understanding of Git for version control and collaboration.",
-                            "level": ""
-                        },
-                        "es": {
-                            "text": "Comprensión completa de Git para control de versiones y colaboración."
-                        },
-                        "fr": {
-                            "text": "Compréhension complète de Git pour le contrôle de version et la collaboration."
-                        },
-                        "ko": {
-                            "text": "버전 관리 및 협업을 위한 Git에 대한 완전한 이해."
                         }
                     }
                 }
@@ -442,144 +316,15 @@
                 {
                     "id": 1,
                     "img": "",
-                    "faIcon": "fa-brands fa-html5",
-                    "faIconColors": {"bg": "", "fill": "#E34F26"},
-                    "date": {"year": 2018, "month": 9},
-                    "percentage": 100,
-                    "locales": {
-                        "en": {
-                            "title": "HTML 5",
-                            "text": "I am proficient in HTML5 for building structured web pages.",
-                            "level": ""
-                        },
-                        "es": {
-                            "text": "Soy competente en HTML5 para construir páginas web estructuradas."
-                        },
-                        "fr": {
-                            "text": "Je suis compétent en HTML5 pour créer des pages web structurées."
-                        },
-                        "ko": {
-                            "text": "구조화된 웹 페이지를 구축하기 위해 HTML5에 능숙합니다."
-                        }
-                    }
-                },
-                {
-                    "id": 2,
-                    "img": "",
-                    "faIcon": "fa-brands fa-css3-alt",
-                    "faIconColors": {"bg": "", "fill": "#1572B6"},
-                    "date": {"year": 2019, "month": 1},
-                    "percentage": 65,
-                    "locales": {
-                        "en": {
-                            "title": "CSS 3",
-                            "text": "I can create responsive and visually appealing designs using CSS3.",
-                            "level": ""
-                        },
-                        "es": {
-                            "text": "Puedo crear diseños receptivos y visualmente atractivos utilizando CSS3."
-                        },
-                        "fr": {
-                            "text": "Je peux créer des designs réactifs et visuellement attrayants en utilisant CSS3."
-                        },
-                        "ko": {
-                            "text": "CSS3를 사용하여 반응형이고 시각적으로 매력적인 디자인을 만들 수 있습니다."
-                        }
-                    }
-                },
-                {
-                    "id": 3,
-                    "img": "",
                     "faIcon": "fa-brands fa-js",
                     "faIconColors": {"bg": "", "fill": "#F7DF1E", "fillLight": "#a69617"},
-                    "date": {"year": 2020, "month": 3},
-                    "percentage": 90,
+                    "date": {"year": null, "month": null},
+                    "percentage": 60,
                     "locales": {
                         "en": {
-                            "title": "JavaScript ES6+",
-                            "text": "Mastered JavaScript ES6+ for dynamic and interactive web applications.",
+                            "title": "JavaScript",
+                            "text": "Intermediate JavaScript for frontend integration and scripting tasks.",
                             "level": ""
-                        },
-                        "es": {
-                            "text": "Dominio de JavaScript ES6+ para aplicaciones web dinámicas e interactivas."
-                        },
-                        "fr": {
-                            "text": "Maîtrisé JavaScript ES6+ pour des applications web dynamiques et interactives."
-                        },
-                        "ko": {
-                            "text": "동적이고 대화형 웹 애플리케이션을 위한 JavaScript ES6+를 마스터했습니다."
-                        }
-                    }
-                },
-                {
-                    "id": 4,
-                    "img": "",
-                    "faIcon": "fa-brands fa-react",
-                    "faIconColors": {"bg": "", "fill": "#61DAFB", "fillLight": "#317385"},
-                    "date": {"year": 2020, "month": 6},
-                    "percentage": 95,
-                    "locales": {
-                        "en": {
-                            "title": "React",
-                            "text": "Complete understanding of React for building modern web applications.",
-                            "level": ""
-                        },
-                        "es": {
-                            "text": "Comprensión completa de React para construir aplicaciones web modernas."
-                        },
-                        "fr": {
-                            "text": "Compréhension complète de React pour créer des applications web modernes."
-                        },
-                        "ko": {
-                            "text": "최신 웹 애플리케이션 구축을 위한 React에 대한 완전한 이해."
-                        }
-                    }
-                },
-                {
-                    "id": 5,
-                    "img": "",
-                    "faIcon": "fa-brands fa-vuejs",
-                    "faIconColors": {"bg": "", "fill": "#4FC08D", "fillLight": "#2b825b"},
-                    "date": {"year": 2023, "month": 8},
-                    "percentage": 40,
-                    "locales": {
-                        "en": {
-                            "title": "Vue.js",
-                            "text": "Good understanding of Vue.js for building interactive user interfaces.",
-                            "level": ""
-                        },
-                        "es": {
-                            "text": "Buena comprensión de Vue.js para construir interfaces de usuario interactivas."
-                        },
-                        "fr": {
-                            "text": "Bonne compréhension de Vue.js pour créer des interfaces utilisateur interactives."
-                        },
-                        "ko": {
-                            "text": "대화형 사용자 인터페이스 구축을 위한 Vue.js에 대한 좋은 이해."
-                        }
-                    }
-                },
-                {
-                    "id": 6,
-                    "img": "",
-                    "faIcon": "fa-brands fa-bootstrap",
-                    "faIconColors": {"bg": "", "fill": "#7952B3"},
-                    "date": {"year": 2021, "month": 2},
-                    "percentage": 90,
-                    "locales": {
-                        "en": {
-                            "title": "Bootstrap 5+",
-                            "text": "Good understanding of Bootstrap for responsive design.",
-                            "level": ""
-                        },
-                        "es": {
-                            "text": "Buena comprensión de Bootstrap para diseño receptivo."
-                        },
-                        "fr": {
-                            "text": "Bonne compréhension de Bootstrap pour le design réactif."
-                        },
-                        "ko": {
-                            "text": "반응형 디자인을 위한 Bootstrap에 대한 좋은 이해."
                         }
                     }
                 }

@@ -8,6 +8,7 @@ import AvatarView from "/src/components/generic/AvatarView.jsx"
 import {Tag, Tags} from "/src/components/generic/Tags.jsx"
 import ArticleItemPreviewMenu from "/src/components/articles/partials/ArticleItemPreviewMenu.jsx"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
+import {usePortfolioSearch} from "/src/hooks/usePortfolioSearch.js"
 
 /**
  * @param {ArticleDataWrapper} dataWrapper
@@ -42,40 +43,94 @@ function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId }) {
     const language = useLanguage()
     const viewport = useViewport()
 
-    const filteredItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
+    const [searchQuery, setSearchQuery] = useState("")
+    const [debouncedQuery, setDebouncedQuery] = useState("")
+
+    useEffect(() => {
+        const timer = setTimeout(() => setDebouncedQuery(searchQuery), 300)
+        return () => clearTimeout(timer)
+    }, [searchQuery])
+
+    const filteredItems = usePortfolioSearch(dataWrapper.orderedItems, selectedItemCategoryId, debouncedQuery)
     const customBreakpoint = viewport.getCustomBreakpoint(constants.SWIPER_BREAKPOINTS_FOR_THREE_SLIDES)
 
     const itemsPerRow = customBreakpoint?.slidesPerView || 1
     const itemsPerRowClass = `article-portfolio-items-${itemsPerRow}-per-row`
 
     const refreshFlag = dataWrapper.categories?.length ?
-        selectedItemCategoryId + "-" + language.getSelectedLanguage()?.id :
-        language.getSelectedLanguage()?.id
+        selectedItemCategoryId + "-" + debouncedQuery + "-" + language.getSelectedLanguage()?.id :
+        debouncedQuery + "-" + language.getSelectedLanguage()?.id
 
-    if(dataWrapper.categories?.length) {
-        return (
-            <Transitionable id={dataWrapper.uniqueId}
-                            refreshFlag={refreshFlag}
-                            delayBetweenItems={100}
-                            animation={Transitionable.Animations.POP}
-                            className={`article-portfolio-items ${itemsPerRowClass}`}>
-                {filteredItems.map((itemWrapper, key) => (
-                    <ArticlePortfolioItem itemWrapper={itemWrapper}
-                                          key={key}/>
-                ))}
-            </Transitionable>
-        )
-    }
-    else {
-        return (
-            <div className={`article-portfolio-items ${itemsPerRowClass} mb-3 mb-lg-2`}>
-                {filteredItems.map((itemWrapper, key) => (
-                    <ArticlePortfolioItem itemWrapper={itemWrapper}
-                                          key={key}/>
-                ))}
+    const hasQuery = searchQuery.length > 0
+    const showEmptyState = filteredItems.length === 0 && debouncedQuery.trim().length > 0
+    const handleReset = () => setSearchQuery("")
+
+    const searchBar = (
+        <div className={`article-portfolio-search mb-3`}>
+            <div className={`input-group`}>
+                <span className={`input-group-text`} aria-hidden="true">
+                    <i className={`fa-solid fa-magnifying-glass`}/>
+                </span>
+                <input type="search"
+                       className={`form-control`}
+                       value={searchQuery}
+                       onChange={(e) => setSearchQuery(e.target.value)}
+                       placeholder="Search by title, tag, or description..."
+                       aria-label="Search portfolio projects"/>
+                {hasQuery && (
+                    <button type="button"
+                            className={`btn btn-outline-secondary article-portfolio-search-clear`}
+                            aria-label="Clear search"
+                            onClick={handleReset}>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                )}
             </div>
-        )
-    }
+            <div className={`visually-hidden`} role="status" aria-live="polite">
+                {debouncedQuery.trim().length > 0
+                    ? `${filteredItems.length} ${filteredItems.length === 1 ? 'project' : 'projects'} found.`
+                    : ''}
+            </div>
+        </div>
+    )
+
+    const emptyState = (
+        <div className={`article-portfolio-empty text-center py-4`} role="status">
+            <p className={`mb-3`}>No projects found. Try a different search.</p>
+            <button type="button"
+                    className={`btn btn-outline-primary`}
+                    onClick={handleReset}>
+                Reset
+            </button>
+        </div>
+    )
+
+    const grid = dataWrapper.categories?.length ? (
+        <Transitionable id={dataWrapper.uniqueId}
+                        refreshFlag={refreshFlag}
+                        delayBetweenItems={100}
+                        animation={Transitionable.Animations.POP}
+                        className={`article-portfolio-items ${itemsPerRowClass}`}>
+            {filteredItems.map((itemWrapper, key) => (
+                <ArticlePortfolioItem itemWrapper={itemWrapper}
+                                      key={key}/>
+            ))}
+        </Transitionable>
+    ) : (
+        <div className={`article-portfolio-items ${itemsPerRowClass} mb-3 mb-lg-2`}>
+            {filteredItems.map((itemWrapper, key) => (
+                <ArticlePortfolioItem itemWrapper={itemWrapper}
+                                      key={key}/>
+            ))}
+        </div>
+    )
+
+    return (
+        <>
+            {searchBar}
+            {showEmptyState ? emptyState : grid}
+        </>
+    )
 }
 
 /**

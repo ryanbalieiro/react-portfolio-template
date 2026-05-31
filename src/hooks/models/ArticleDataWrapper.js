@@ -157,6 +157,19 @@ export default class ArticleDataWrapper {
         })
     }
 
+    getOrderedItemsFilteredByQuery(categoryId, query) {
+        const base = this.getOrderedItemsFilteredBy(categoryId)
+        if (!query || !query.trim()) return base
+
+        const q = query.trim().toLowerCase()
+        return base.filter(item => {
+            const title = utils.string.stripHTMLTags(item.locales.title || "").toLowerCase()
+            const text = utils.string.stripHTMLTags(item.locales.text || "").toLowerCase()
+            const tags = (item.locales.tags || []).map(t => t.toLowerCase())
+            return title.includes(q) || text.includes(q) || tags.some(tag => tag.includes(q))
+        })
+    }
+
     _evaluate() {
         // Check if all items have a valid categoryId...
         const categories = this.categories.map(category => category.id)

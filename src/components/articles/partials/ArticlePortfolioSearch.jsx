@@ -17,7 +17,7 @@ function ArticlePortfolioSearch({ query, setQuery, placeholder = "Search..." }) 
                     className={`article-portfolio-search-clear`}
                     type="button"
                     onMouseDown={() => setQuery("")}
-                    onTouchStart={() => setQuery("")}>
+                    onTouchStart={(e) => { e.preventDefault(); setQuery("") }}>
                     <i className={`fa-solid fa-xmark`}/>
                 </button>
             )}

@@ -1,5 +1,5 @@
 import "./ArticlePortfolio.scss"
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import Article from "/src/components/articles/base/Article.jsx"
 import Transitionable from "/src/components/capabilities/Transitionable.jsx"
 import {useViewport} from "/src/providers/ViewportProvider.jsx"

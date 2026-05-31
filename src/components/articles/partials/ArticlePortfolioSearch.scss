@@ -1,0 +1,56 @@
+@import "/src/styles/extend.scss";
+
+div.article-portfolio-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 18px;
+
+    background-color: var(--theme-boards-background);
+    border: 2px solid var(--theme-card-background);
+    border-radius: $standard-border-radius;
+    padding: 6px 12px;
+
+    @include media-breakpoint-down(md) {
+        border-width: 1px;
+        margin-bottom: 14px;
+    }
+}
+
+i.article-portfolio-search-icon {
+    color: var(--theme-texts-light-2);
+    font-size: 13px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    pointer-events: none;
+}
+
+input.article-portfolio-search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--theme-texts-light-1);
+
+    &::placeholder {
+        color: var(--theme-texts-light-2);
+    }
+}
+
+button.article-portfolio-search-clear {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 0 0 8px;
+    cursor: pointer;
+    color: var(--theme-texts-light-2);
+    font-size: 13px;
+    flex-shrink: 0;
+    line-height: 1;
+
+    &:hover {
+        color: var(--theme-texts-light-1);
+    }
+}

@@ -93,3 +93,15 @@ div.article-portfolio-item-body {
 div.article-portfolio-item-footer {
     margin-top: 10px;
 }
+
+div.article-portfolio-empty {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--theme-texts-light-2);
+    padding: 10px 4px;
+}
+
+i.article-portfolio-empty-icon {
+    font-size: 14px;
+}

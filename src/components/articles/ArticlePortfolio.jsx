@@ -7,6 +7,7 @@ import {useConstants} from "/src/hooks/constants.js"
 import AvatarView from "/src/components/generic/AvatarView.jsx"
 import {Tag, Tags} from "/src/components/generic/Tags.jsx"
 import ArticleItemPreviewMenu from "/src/components/articles/partials/ArticleItemPreviewMenu.jsx"
+import ArticlePortfolioSearch from "/src/components/articles/partials/ArticlePortfolioSearch.jsx"
 import {useLanguage} from "/src/providers/LanguageProvider.jsx"
 
 /**
@@ -17,6 +18,7 @@ import {useLanguage} from "/src/providers/LanguageProvider.jsx"
  */
 function ArticlePortfolio({ dataWrapper, id }) {
     const [selectedItemCategoryId, setSelectedItemCategoryId] = useState(null)
+    const [searchQuery, setSearchQuery] = useState("")
 
     return (
         <Article id={dataWrapper.uniqueId}
@@ -26,7 +28,9 @@ function ArticlePortfolio({ dataWrapper, id }) {
                  selectedItemCategoryId={selectedItemCategoryId}
                  setSelectedItemCategoryId={setSelectedItemCategoryId}>
             <ArticlePortfolioItems dataWrapper={dataWrapper}
-                                   selectedItemCategoryId={selectedItemCategoryId}/>
+                                   selectedItemCategoryId={selectedItemCategoryId}
+                                   searchQuery={searchQuery}
+                                   setSearchQuery={setSearchQuery}/>
         </Article>
     )
 }
@@ -34,46 +38,72 @@ function ArticlePortfolio({ dataWrapper, id }) {
 /**
  * @param {ArticleDataWrapper} dataWrapper
  * @param {String} selectedItemCategoryId
+ * @param {String} searchQuery
+ * @param {Function} setSearchQuery
  * @return {JSX.Element}
  * @constructor
  */
-function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId }) {
+function ArticlePortfolioItems({ dataWrapper, selectedItemCategoryId, searchQuery, setSearchQuery }) {
     const constants = useConstants()
     const language = useLanguage()
     const viewport = useViewport()
 
-    const filteredItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
+    const filteredItems = dataWrapper.getOrderedItemsFilteredByQuery(selectedItemCategoryId, searchQuery)
     const customBreakpoint = viewport.getCustomBreakpoint(constants.SWIPER_BREAKPOINTS_FOR_THREE_SLIDES)
 
     const itemsPerRow = customBreakpoint?.slidesPerView || 1
     const itemsPerRowClass = `article-portfolio-items-${itemsPerRow}-per-row`
 
     const refreshFlag = dataWrapper.categories?.length ?
-        selectedItemCategoryId + "-" + language.getSelectedLanguage()?.id :
-        language.getSelectedLanguage()?.id
+        selectedItemCategoryId + "-" + searchQuery + "-" + language.getSelectedLanguage()?.id :
+        searchQuery + "-" + language.getSelectedLanguage()?.id
+
+    const searchBar = (
+        <ArticlePortfolioSearch query={searchQuery}
+                                setQuery={setSearchQuery}
+                                placeholder={`Search projects...`}/>
+    )
+
+    if (filteredItems.length === 0) {
+        return (
+            <>
+                {searchBar}
+                <div className={`article-portfolio-empty text-2`}>
+                    <i className={`article-portfolio-empty-icon fa-solid fa-magnifying-glass`}/>
+                    <span>{`No results for "${searchQuery}"`}</span>
+                </div>
+            </>
+        )
+    }
 
     if(dataWrapper.categories?.length) {
         return (
-            <Transitionable id={dataWrapper.uniqueId}
-                            refreshFlag={refreshFlag}
-                            delayBetweenItems={100}
-                            animation={Transitionable.Animations.POP}
-                            className={`article-portfolio-items ${itemsPerRowClass}`}>
-                {filteredItems.map((itemWrapper, key) => (
-                    <ArticlePortfolioItem itemWrapper={itemWrapper}
-                                          key={key}/>
-                ))}
-            </Transitionable>
+            <>
+                {searchBar}
+                <Transitionable id={dataWrapper.uniqueId}
+                                refreshFlag={refreshFlag}
+                                delayBetweenItems={100}
+                                animation={Transitionable.Animations.POP}
+                                className={`article-portfolio-items ${itemsPerRowClass}`}>
+                    {filteredItems.map((itemWrapper, key) => (
+                        <ArticlePortfolioItem itemWrapper={itemWrapper}
+                                              key={key}/>
+                    ))}
+                </Transitionable>
+            </>
         )
     }
     else {
         return (
-            <div className={`article-portfolio-items ${itemsPerRowClass} mb-3 mb-lg-2`}>
-                {filteredItems.map((itemWrapper, key) => (
-                    <ArticlePortfolioItem itemWrapper={itemWrapper}
-                                          key={key}/>
-                ))}
-            </div>
+            <>
+                {searchBar}
+                <div className={`article-portfolio-items ${itemsPerRowClass} mb-3 mb-lg-2`}>
+                    {filteredItems.map((itemWrapper, key) => (
+                        <ArticlePortfolioItem itemWrapper={itemWrapper}
+                                              key={key}/>
+                    ))}
+                </div>
+            </>
         )
     }
 }

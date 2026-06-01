@@ -1,5 +1,5 @@
 {
-    "name": "Mark Choi",
+    "name": "Đinh Ngọc Trung",
 
     "profilePictureUrl": "images/pictures/profile-picture.jpg",
     "resumePdfUrl": "",
@@ -10,48 +10,38 @@
 
     "locales": {
         "en": {
-            "localized_name": "Mark Choi",
-            "localized_name_stylized": " [[Mark {{Choi}}]]",
-            "status_message_available_for_freelance": "Available for freelance!",
+            "localized_name": "Đinh Ngọc Trung",
+            "localized_name_stylized": "Đinh Ngọc [[Trung]]",
+            "status_message_available_for_freelance": "Open to new opportunities!",
             "roles": [
-                "Backend Developer",
-                "Frontend Developer",
-                "DevOps Engineer",
-                "UX Designer"
-            ],
-            "name_pronunciation_ipa": "/mark chwe/",
-            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
+                "Developer",
+                "Full Stack Developer",
+                "Web Developer"
+            ]
         },
         "es": {
-            "status_message_available_for_freelance": "¡Disponible para freelance!",
+            "status_message_available_for_freelance": "¡Abierto a nuevas oportunidades!",
             "roles": [
-                "Desarrollador Backend",
-                "Desarrollador Frontend",
-                "Ingeniero DevOps",
-                "Diseñador UX"
+                "Desarrollador",
+                "Desarrollador Full Stack",
+                "Desarrollador Web"
             ]
         },
         "fr": {
-            "status_message_available_for_freelance": "Disponible pour freelance !",
+            "status_message_available_for_freelance": "Disponible pour de nouvelles opportunités !",
             "roles": [
-                "Développeur Backend",
-                "Développeur Frontend",
-                "Ingénieur DevOps",
-                "Designer UX"
+                "Développeur",
+                "Développeur Full Stack",
+                "Développeur Web"
             ]
         },
         "ko": {
-            "localized_name": "최민석",
-            "localized_name_stylized": "{{최}}민석",
-            "status_message_available_for_freelance": "프리랜스 가능합니다!",
+            "status_message_available_for_freelance": "새로운 기회를 찾고 있습니다!",
             "roles": [
-                "백엔드 개발자",
-                "프론트엔드 개발자",
-                "데브옵스 엔지니어",
-                "UX 디자이너"
-            ],
-            "name_pronunciation_ipa": "/chwe min-seok/",
-            "name_pronunciation_audio_url": "audio/korean-name-pronunciation.mp3"
+                "개발자",
+                "풀스택 개발자",
+                "웹 개발자"
+            ]
         }
     }
 }

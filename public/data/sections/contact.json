@@ -33,9 +33,9 @@
             "id": 1,
             "component": "ArticleContactForm",
             "settings": {
-                "email_js_public_key": "tzObcsmOwHvPy6Rhp",
-                "email_js_service_id": "service_4h8g7vb",
-                "email_js_template_id": "template_react"
+                "email_js_public_key": "",
+                "email_js_service_id": "",
+                "email_js_template_id": ""
             },
             "locales": {
                 "en": {
@@ -82,24 +82,10 @@
             "items": [
                 {
                     "id": 1,
-                    "faIcon": "fa-solid fa-phone",
-                    "faIconColors": { "bg": "", "fill": "" },
-                    "label": "+1 (123) 456-7890",
-                    "link": {"href": "tel:11234567890", "tooltipString": "call_me"},
-                    "copyToClipboardButton": true,
-                    "locales": {
-                        "en": {"title": "Phone"},
-                        "es": {"title": "Teléfono"},
-                        "fr": {"title": "Téléphone"},
-                        "ko": {"title": "전화"}
-                    }
-                },
-                {
-                    "id":2,
                     "faIcon": "fa-solid fa-envelope",
-                    "faIconColors": { "bg": "", "fill": "" },
-                    "label": "mark.choi@email.com",
-                    "link": {"href": "mailto:mark.choi@email.com", "tooltipString": "email_me"},
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": "trungdinhngoc@zigexn.vn",
+                    "link": {"href": "mailto:trungdinhngoc@zigexn.vn", "tooltipString": "email_me"},
                     "copyToClipboardButton": true,
                     "locales": {
                         "en": {"title": "E-mail"},
@@ -107,10 +93,22 @@
                     }
                 },
                 {
+                    "id": 2,
+                    "faIcon": "fa-brands fa-github",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": "@ngoctrung-zigexn",
+                    "link": {"href": "https://github.com/ngoctrung-zigexn", "tooltipString": "open_website"},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {"title": "GitHub"},
+                        "ko": {"title": "깃허브"}
+                    }
+                },
+                {
                     "id": 3,
                     "faIcon": "fa-brands fa-linkedin",
-                    "faIconColors": { "bg": "", "fill": "" },
-                    "label": "@markchoi",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": "[Điền LinkedIn]",
                     "link": {"href": "https://linkedin.com/in/", "tooltipString": "open_website"},
                     "copyToClipboardButton": false,
                     "locales": {
@@ -120,38 +118,16 @@
                 },
                 {
                     "id": 4,
-                    "faIcon": "fa-brands fa-facebook",
-                    "faIconColors": { "bg": "", "fill": "" },
-                    "label": "Mark Choi",
-                    "link": {"href": "https://facebook.com/profiles/mark.choi.855/default", "tooltipString": "open_website"},
-                    "copyToClipboardButton": false,
+                    "faIcon": "fa-solid fa-phone",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": "[Điền số điện thoại]",
+                    "link": {"href": "tel:", "tooltipString": "call_me"},
+                    "copyToClipboardButton": true,
                     "locales": {
-                        "en": {"title": "Facebook"},
-                        "ko": {"title": "페이스북"}
-                    }
-                },
-                {
-                    "id": 5,
-                    "faIcon": "fa-brands fa-instagram",
-                    "faIconColors": { "bg": "", "fill": "" },
-                    "label": "@codingmark",
-                    "link": {"href": "https://instagram.com/", "tooltipString": "open_website"},
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": {"title": "Instagram"},
-                        "ko": {"title": "인스타그램"}
-                    }
-                },
-                {
-                    "id": 6,
-                    "faIcon": "fa-brands fa-tiktok",
-                    "faIconColors": { "bg": "", "fill": "" },
-                    "label": "@markchoi",
-                    "link": {"href": "https://tiktok.com/@markchoi", "tooltipString": "open_website"},
-                    "copyToClipboardButton": false,
-                    "locales": {
-                        "en": { "title": "TikTok" },
-                        "ko": { "title": "틱톡" }
+                        "en": {"title": "Phone"},
+                        "es": {"title": "Teléfono"},
+                        "fr": {"title": "Téléphone"},
+                        "ko": {"title": "전화"}
                     }
                 }
             ]

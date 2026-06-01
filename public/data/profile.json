@@ -1,5 +1,5 @@
 {
-    "name": "Mark Choi",
+    "name": "Tung Nguyen Son",
 
     "profilePictureUrl": "images/pictures/profile-picture.jpg",
     "resumePdfUrl": "",
@@ -10,45 +10,33 @@
 
     "locales": {
         "en": {
-            "localized_name": "Mark Choi",
-            "localized_name_stylized": " [[Mark {{Choi}}]]",
-            "status_message_available_for_freelance": "Available for freelance!",
+            "localized_name": "Tung Nguyen Son",
+            "localized_name_stylized": " [[Tung {{Nguyen Son}}]]",
+            "status_message_available_for_freelance": "Available for work!",
             "roles": [
-                "Backend Developer",
-                "Frontend Developer",
-                "DevOps Engineer",
-                "UX Designer"
+                "Developer"
             ],
-            "name_pronunciation_ipa": "/mark chwe/",
+            "name_pronunciation_ipa": "",
             "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
         },
         "es": {
-            "status_message_available_for_freelance": "¡Disponible para freelance!",
+            "status_message_available_for_freelance": "¡Disponible para trabajar!",
             "roles": [
-                "Desarrollador Backend",
-                "Desarrollador Frontend",
-                "Ingeniero DevOps",
-                "Diseñador UX"
+                "Developer"
             ]
         },
         "fr": {
-            "status_message_available_for_freelance": "Disponible pour freelance !",
+            "status_message_available_for_freelance": "Disponible pour travailler !",
             "roles": [
-                "Développeur Backend",
-                "Développeur Frontend",
-                "Ingénieur DevOps",
-                "Designer UX"
+                "Developer"
             ]
         },
         "ko": {
-            "localized_name": "최민석",
-            "localized_name_stylized": "{{최}}민석",
-            "status_message_available_for_freelance": "프리랜스 가능합니다!",
+            "localized_name": "Tung Nguyen Son",
+            "localized_name_stylized": "{{Tung}} Nguyen Son",
+            "status_message_available_for_freelance": "일할 준비가 되어 있습니다!",
             "roles": [
-                "백엔드 개발자",
-                "프론트엔드 개발자",
-                "데브옵스 엔지니어",
-                "UX 디자이너"
+                "Developer"
             ],
             "name_pronunciation_ipa": "/chwe min-seok/",
             "name_pronunciation_audio_url": "audio/korean-name-pronunciation.mp3"

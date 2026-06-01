@@ -5,25 +5,25 @@
                 "title_short": "Welcome!",
                 "title_short_nav": "About me",
                 "title_long_prefix": "Hello...",
-                "title_long": "I'm {{Mark Choi!}}"
+                "title_long": "I'm {{Tung Nguyen Son!}}"
             },
             "es": {
                 "title_short": "¡Saludos!",
                 "title_short_nav": "Sobre mí",
                 "title_long_prefix": "Hola...",
-                "title_long": "Soy {{Mark Choi!}}"
+                "title_long": "Soy {{Tung Nguyen Son!}}"
             },
             "fr": {
                 "title_short": "Salut !",
                 "title_short_nav": "À propos",
                 "title_long_prefix": "Salut...",
-                "title_long": "Je suis {{Mark Choi !}}"
+                "title_long": "Je suis {{Tung Nguyen Son !}}"
             },
             "ko": {
                 "title_short": "환영합니다!",
                 "title_short_nav": "소개",
                 "title_long_prefix": "안녕하세요...",
-                "title_long": "저는 {{최민석}}입니다!"
+                "title_long": "저는 {{Tung Nguyen Son}}입니다!"
             }
         }
     },
@@ -47,8 +47,8 @@
                 },
                 {
                     "id": 2,
-                    "label": "mark.choi@dev.com",
-                    "link": {"href": "mailto:mark.choi@dev.com", "tooltipString": "email_me"},
+                    "label": "tungnguyenson@zigexn.vn",
+                    "link": {"href": "mailto:tungnguyenson@zigexn.vn", "tooltipString": "email_me"},
                     "faIcon": "fa-regular fa-envelope"
                 },
                 {
@@ -81,16 +81,16 @@
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "text": "<p>I’m a {{PHP}} developer with [[over a decade]] of experience, specializing in backend development with some frontend work as well. I also have hands-on experience with C++, C#, Go, and Python in production environments.</p><p>This diverse background gives me the flexibility to adapt to a wide range of project needs, whether it's building scalable APIs, optimizing system performance, or contributing to full-stack solutions.</p><p>I look forward to collaborating [[with you!]]</p>"
+                            "text": "<p>I’m <b>Tung Nguyen Son</b>, a {{developer}} who enjoys building things for the web — from clean user interfaces to reliable back-end services. I work with <b>JavaScript</b>, <b>React</b>, <b>Node.js</b>, and <b>Python</b>, and I care about writing code that’s readable and easy to maintain.</p><p>I’m comfortable across the full stack and enjoy picking up new tools when the problem calls for it. Outside of work I like exploring design and figuring out how to make software feel good to use.</p><p>I’m always open to interesting projects — feel free to [[reach out!]]</p>"
                         },
                         "es": {
-                            "text": "<p>Soy un desarrollador de {{PHP}} con [[más de una década]] de experiencia, especializado en desarrollo backend y con algo de experiencia en frontend. También tengo experiencia práctica en entornos de producción con C++, C#, Go y Python.</p><p>Este variado historial me permite adaptarme a una amplia gama de necesidades de proyectos, ya sea construyendo APIs escalables, optimizando el rendimiento de sistemas o contribuyendo a soluciones full-stack.</p><p>¡Espero con interés colaborar [[contigo!]]</p>"
+                            "text": "<p>Soy <b>Tung Nguyen Son</b>, un {{desarrollador}} al que le gusta construir cosas para la web, desde interfaces limpias hasta servicios back-end confiables. Trabajo con <b>JavaScript</b>, <b>React</b>, <b>Node.js</b> y <b>Python</b>, y me preocupa escribir código legible y fácil de mantener.</p><p>Me desenvuelvo bien en todo el stack y disfruto aprendiendo nuevas herramientas cuando el problema lo requiere. Fuera del trabajo me gusta explorar el diseño y pensar en cómo hacer que el software se sienta bien al usarlo.</p><p>Siempre estoy abierto a proyectos interesantes — ¡no dudes en [[contactarme!]]</p>"
                         },
                         "fr": {
-                            "text": "<p>Je suis développeur {{PHP}} avec [[plus d'une décennie]] d'expérience, spécialisé dans le développement backend avec un peu de travail en frontend également. J'ai aussi de l'expérience en production avec les technologies C++, C#, Go et Python.</p><p>Ce parcours diversifié me permet de m'adapter à une large gamme de besoins de projets, qu'il s'agisse de créer des API évolutives, d'améliorer les performances système ou de participer à des solutions full-stack.</p><p>Je suis impatient de collaborer [[avec vous !]]</p>"
+                            "text": "<p>Je suis <b>Tung Nguyen Son</b>, un {{développeur}} qui aime construire des choses pour le web — des interfaces soignées aux services back-end fiables. Je travaille avec <b>JavaScript</b>, <b>React</b>, <b>Node.js</b> et <b>Python</b>, et j’accorde de l’importance à un code lisible et facile à maintenir.</p><p>Je suis à l’aise sur toute la stack et j’aime apprendre de nouveaux outils quand le problème l’exige. En dehors du travail, j’aime explorer le design et réfléchir à la façon de rendre les logiciels agréables à utiliser.</p><p>Je suis toujours ouvert aux projets intéressants — n’hésitez pas à [[me contacter !]]</p>"
                         },
                         "ko": {
-                            "text": "<p>저는 {{백엔드}} 개발을 전문으로 하고, 프론트엔드 작업도 일부 수행해온 [[10년 이상의]] 경력을 가진 PHP 개발자입니다. 또한 C++, C#, Go, Python 스택을 사용한 프로덕션 경험도 있습니다.</p><p>이 다양한 배경 덕분에 프로젝트의 다양한 요구에 유연하게 대처할 수 있습니다. 확장 가능한 API 구축, 시스템 성능 최적화, 또는 전체 스택 솔루션에 기여하는 등 다양한 분야에 능숙하게 참여할 수 있습니다. 저는 각 프로젝트에 맞는 최적의 도구를 찾는 것과 새로운 도전을 즐깁니다.</p><p>[[당신과 협업]]하기를 기대하고 있습니다!</p>"
+                            "text": "<p>저는 <b>Tung Nguyen Son</b>이며, 웹을 위한 것들을 만드는 것을 즐기는 {{개발자}}입니다. 깔끔한 사용자 인터페이스부터 안정적인 백엔드 서비스까지 다양하게 작업합니다. <b>JavaScript</b>, <b>React</b>, <b>Node.js</b>, <b>Python</b>을 주로 사용하며, 읽기 쉽고 유지보수하기 좋은 코드를 중요하게 생각합니다.</p><p>풀스택 전반에 걸쳐 작업할 수 있으며, 문제에 맞는 새로운 도구를 배우는 것도 즐깁니다. 업무 외에는 디자인을 탐구하고 소프트웨어를 더 좋게 만드는 방법을 고민하는 것을 좋아합니다.</p><p>흥미로운 프로젝트라면 언제든 환영합니다 — [[연락해 주세요!]]</p>"
                         }
                     }
                 }
@@ -121,19 +121,19 @@
                     "locales": {
                         "en": {
                             "title": "CEO at [[SalesForce]]",
-                            "text": "Working with Mark was a truly [[transformative experience]]. His outstanding programming skills and collaborative spirit not only elevated the quality of our project but also brought a renewed sense of motivation and purpose to us."
+                            "text": "Working with Tungwas a truly [[transformative experience]]. His outstanding programming skills and collaborative spirit not only elevated the quality of our project but also brought a renewed sense of motivation and purpose to us."
                         },
                         "es": {
                             "title": "CEO en [[SalesForce]]",
-                            "text": "Trabajar con Mark fue una [[experiencia transformadora]]. Su gran habilidad para programar y su espíritu colaborativo mejoraron el proyecto y nos devolvieron la motivación y el propósito."
+                            "text": "Trabajar con Tungfue una [[experiencia transformadora]]. Su gran habilidad para programar y su espíritu colaborativo mejoraron el proyecto y nos devolvieron la motivación y el propósito."
                         },
                         "fr": {
                             "title": "PDG de [[SalesForce]]",
-                            "text": "Travailler avec Mark fut une [[expérience transformante]]. Ses compétences en programmation et son esprit d’équipe ont élevé le projet et ravivé notre motivation et notre but."
+                            "text": "Travailler avec Tungfut une [[expérience transformante]]. Ses compétences en programmation et son esprit d’équipe ont élevé le projet et ravivé notre motivation et notre but."
                         },
                         "ko": {
                             "title": "세일즈포스 CEO",
-                            "text": "Mark와 함께한 시간은 [[변화의 경험]]이었습니다. 그의 뛰어난 프로그래밍 실력과 협업 정신은 프로젝트 품질을 높이고 우리에게 새로운 동기를 불어넣었습니다."
+                            "text": "Tung과 함께한 시간은 [[변화의 경험]]이었습니다. 그의 뛰어난 프로그래밍 실력과 협업 정신은 프로젝트 품질을 높이고 우리에게 새로운 동기를 불어넣었습니다."
                         }
                     }
                 },
@@ -147,19 +147,19 @@
                     "locales": {
                         "en": {
                             "title": "Lead Developer at [[GitHub]]",
-                            "text": "Having Mark on our team was an invaluable asset. His [[deep programming insights and mentorship]] not only elevated our projects but also empowered us to tackle every challenge with confidence and creativity."
+                            "text": "Having Tungon our team was an invaluable asset. His [[deep programming insights and mentorship]] not only elevated our projects but also empowered us to tackle every challenge with confidence and creativity."
                         },
                         "es": {
                             "title": "Desarrollador Principal en [[GitHub]]",
-                            "text": "Tener a Mark fue un recurso invaluable. Sus [[profundos conocimientos y mentoría]] mejoraron nuestros proyectos y nos dieron confianza para afrontar cualquier desafío con creatividad."
+                            "text": "Tener a Tungfue un recurso invaluable. Sus [[profundos conocimientos y mentoría]] mejoraron nuestros proyectos y nos dieron confianza para afrontar cualquier desafío con creatividad."
                         },
                         "fr": {
                             "title": "Développeur Principal chez [[GitHub]]",
-                            "text": "La présence de Mark fut un atout inestimable. Ses [[connaissances en programmation et son mentorat]] ont renforcé nos projets et notre capacité à relever les défis avec assurance."
+                            "text": "La présence de Tungfut un atout inestimable. Ses [[connaissances en programmation et son mentorat]] ont renforcé nos projets et notre capacité à relever les défis avec assurance."
                         },
                         "ko": {
                             "title": "[[GitHub]] 수석 개발자",
-                            "text": "Mark는 소중한 자산이었습니다. 그의 [[깊은 프로그래밍 통찰력과 멘토링]]은 프로젝트를 향상시키고 도전을 자신감과 창의성으로 해결할 수 있게 해주었습니다."
+                            "text": "Tung은 소중한 자산이었습니다. 그의 [[깊은 프로그래밍 통찰력과 멘토링]]은 프로젝트를 향상시키고 도전을 자신감과 창의성으로 해결할 수 있게 해주었습니다."
                         }
                     }
                 },
@@ -173,19 +173,19 @@
                     "locales": {
                         "en": {
                             "title": "Managing Director at [[Dingga]]",
-                            "text": "Collaborating with Mark was a true [[game changer]] for our entire development process. His [[deep technical expertise]], creative problem-solving, and proactive mindset were absolutely invaluable."
+                            "text": "Collaborating with Tungwas a true [[game changer]] for our entire development process. His [[deep technical expertise]], creative problem-solving, and proactive mindset were absolutely invaluable."
                         },
                         "es": {
                             "title": "Directora General en [[Dingga]]",
-                            "text": "Colaborar con Mark fue un verdadero [[punto de inflexión]]. Su [[gran experiencia técnica]], creatividad y mentalidad proactiva fueron absolutamente invaluables para nuestro equipo."
+                            "text": "Colaborar con Tungfue un verdadero [[punto de inflexión]]. Su [[gran experiencia técnica]], creatividad y mentalidad proactiva fueron absolutamente invaluables para nuestro equipo."
                         },
                         "fr": {
                             "title": "Directrice Générale chez [[Dingga]]",
-                            "text": "Travailler avec Mark a été un vrai [[tournant]]. Son [[expertise technique approfondie]], sa créativité et sa proactivité ont été d’une valeur inestimable pour notre développement."
+                            "text": "Travailler avec Tunga été un vrai [[tournant]]. Son [[expertise technique approfondie]], sa créativité et sa proactivité ont été d’une valeur inestimable pour notre développement."
                         },
                         "ko": {
                             "title": "딩가 전무이사",
-                            "text": "Mark와의 협업은 진정한 [[게임 체인저]]였습니다. 그의 [[깊이 있는 기술 전문성]], 창의적인 문제 해결력, 능동적인 태도는 매우 소중한 자산이었습니다."
+                            "text": "Tung과의 협업은 진정한 [[게임 체인저]]였습니다. 그의 [[깊이 있는 기술 전문성]], 창의적인 문제 해결력, 능동적인 태도는 매우 소중한 자산이었습니다."
                         }
                     }
                 },
@@ -199,15 +199,15 @@
                     "locales": {
                         "en": {
                             "title": "Creative Director at [[Dribbble]]",
-                            "text": "Mark Choi's [[attention to detail]] and his [[innovative thinking]] brought a fresh perspective to our whole design process! Simply amazing!"
+                            "text": "Tung Nguyen Son's [[attention to detail]] and his [[innovative thinking]] brought a fresh perspective to our whole design process! Simply amazing!"
                         },
                         "es": {
                             "title": "Director Creativo en [[Dribbble]]",
-                            "text": "La [[atención al detalle]] y el [[pensamiento innovador]] de Mark Choi aportaron una perspectiva fresca a todo nuestro proceso de diseño. ¡Simplemente increíble!"
+                            "text": "La [[atención al detalle]] y el [[pensamiento innovador]] de Tung Nguyen Son aportaron una perspectiva fresca a todo nuestro proceso de diseño. ¡Simplemente increíble!"
                         },
                         "fr": {
                             "title": "Directeur Créatif chez [[Dribbble]]",
-                            "text": "L’[[attention aux détails]] et la [[pensée innovante]] de Mark Choi ont apporté une perspective nouvelle à tout notre processus de design ! Simplement incroyable !"
+                            "text": "L’[[attention aux détails]] et la [[pensée innovante]] de Tung Nguyen Son ont apporté une perspective nouvelle à tout notre processus de design ! Simplement incroyable !"
                         },
                         "ko": {
                             "title": "[[Dribbble]] 크리에이티브 디렉터",

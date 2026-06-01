@@ -93,3 +93,120 @@ div.article-portfolio-item-body {
 div.article-portfolio-item-footer {
     margin-top: 10px;
 }
+
+/** ---------- SEARCH BAR ---------- */
+div.article-portfolio-search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 16px;
+
+    background-color: var(--theme-boards-background);
+    border: 1px solid var(--theme-texts-light-2);
+    border-radius: $standard-border-radius;
+    transition: border-color 0.2s ease;
+
+    &:focus-within {
+        border-color: var(--theme-primary);
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        height: 36px;
+    }
+}
+
+i.article-portfolio-search-icon {
+    flex-shrink: 0;
+    padding: 0 10px 0 12px;
+    color: var(--theme-texts-light-2);
+    font-size: 13px;
+    pointer-events: none;
+}
+
+input.article-portfolio-search-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 0.85rem;
+    color: var(--theme-texts);
+
+    &::placeholder {
+        color: var(--theme-texts-light-2);
+    }
+}
+
+button.article-portfolio-search-clear {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--theme-texts-light-2);
+    font-size: 12px;
+    transition: color 0.15s ease, background-color 0.15s ease;
+
+    &:hover, &:focus-visible {
+        color: var(--theme-primary);
+        background-color: var(--theme-boards-background);
+        outline: 1px solid var(--theme-primary);
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/** ---------- EMPTY STATE ---------- */
+div.article-portfolio-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 40px 0;
+    text-align: center;
+
+    p {
+        margin: 0;
+        color: var(--theme-texts-light-2);
+    }
+}
+
+button.article-portfolio-empty-reset {
+    padding: 7px 20px;
+    background: transparent;
+    border: 1px solid var(--theme-primary);
+    border-radius: $standard-border-radius;
+    color: var(--theme-primary);
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover, &:focus-visible {
+        background-color: var(--theme-primary);
+        color: var(--theme-boards-background);
+    }
+}
+
+/** ---------- SCREEN-READER LIVE REGION ---------- */
+div.article-portfolio-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

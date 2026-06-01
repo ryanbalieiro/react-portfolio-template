@@ -93,3 +93,127 @@ div.article-portfolio-item-body {
 div.article-portfolio-item-footer {
     margin-top: 10px;
 }
+
+/** ---------- SEARCH BAR --------------------- */
+div.portfolio-search-bar {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+}
+
+i.portfolio-search-bar-icon {
+    position: absolute;
+    left: 14px;
+    color: var(--theme-texts-light-1);
+    opacity: 0.45;
+    pointer-events: none;
+    font-size: 0.8rem;
+}
+
+input.portfolio-search-bar-input {
+    width: 100%;
+    padding: 9px 40px 9px 38px;
+    background-color: var(--theme-boards-background);
+    color: var(--theme-texts-light-1);
+    border: 2px solid var(--theme-card-background);
+    border-radius: $standard-border-radius;
+    outline: none;
+    transition: border-color 0.15s;
+
+    &::placeholder {
+        color: var(--theme-texts-light-1);
+        opacity: 0.45;
+    }
+
+    &:focus {
+        border-color: var(--theme-primary);
+    }
+
+    &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
+
+    @include media-breakpoint-down(md) {
+        border-width: 1px;
+    }
+}
+
+button.portfolio-search-bar-clear {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 5px 6px;
+    cursor: pointer;
+    color: var(--theme-texts-light-1);
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    line-height: 1;
+
+    &:hover {
+        opacity: 1;
+        background-color: var(--theme-card-background);
+    }
+}
+
+/** ---------- EMPTY STATE -------------------- */
+div.portfolio-empty-state {
+    width: 100%;
+    padding: 48px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--theme-texts-light-1);
+
+    i.portfolio-empty-state-icon {
+        font-size: 2rem;
+        opacity: 0.25;
+        margin-bottom: 4px;
+    }
+
+    p.portfolio-empty-state-message {
+        margin: 0;
+        opacity: 0.7;
+
+        strong.portfolio-empty-state-query {
+            color: var(--theme-primary);
+            opacity: 1;
+            font-style: italic;
+        }
+    }
+
+    button.portfolio-empty-state-reset {
+        margin-top: 6px;
+        background-color: var(--theme-boards-background);
+        color: var(--theme-texts-light-1);
+        border: 2px solid var(--theme-card-background);
+        border-radius: $standard-border-radius;
+        padding: 6px 18px;
+
+        &:hover {
+            background-color: var(--theme-links-hover);
+            color: var(--theme-texts-inv);
+            border-color: var(--theme-links-hover);
+        }
+    }
+}
+
+/** ---------- SCREEN READER ONLY ------------- */
+.portfolio-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

@@ -5,25 +5,25 @@
                 "title_short": "Welcome!",
                 "title_short_nav": "About me",
                 "title_long_prefix": "Hello...",
-                "title_long": "I'm {{Mark Choi!}}"
+                "title_long": "I'm {{Vo Thai Son!}}"
             },
             "es": {
                 "title_short": "¡Saludos!",
                 "title_short_nav": "Sobre mí",
                 "title_long_prefix": "Hola...",
-                "title_long": "Soy {{Mark Choi!}}"
+                "title_long": "Soy {{Vo Thai Son!}}"
             },
             "fr": {
                 "title_short": "Salut !",
                 "title_short_nav": "À propos",
                 "title_long_prefix": "Salut...",
-                "title_long": "Je suis {{Mark Choi !}}"
+                "title_long": "Je suis {{Vo Thai Son !}}"
             },
             "ko": {
                 "title_short": "환영합니다!",
                 "title_short_nav": "소개",
                 "title_long_prefix": "안녕하세요...",
-                "title_long": "저는 {{최민석}}입니다!"
+                "title_long": "저는 {{Vo Thai Son}}입니다!"
             }
         }
     },
@@ -81,16 +81,16 @@
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "text": "<p>I’m a {{PHP}} developer with [[over a decade]] of experience, specializing in backend development with some frontend work as well. I also have hands-on experience with C++, C#, Go, and Python in production environments.</p><p>This diverse background gives me the flexibility to adapt to a wide range of project needs, whether it's building scalable APIs, optimizing system performance, or contributing to full-stack solutions.</p><p>I look forward to collaborating [[with you!]]</p>"
+                            "text": "<p>I’m a recent {{Computer Science}} graduate with hands-on experience in developing [[AI]] and [[Computer Vision]] models using <b>PyTorch</b> and <b>TensorFlow</b>.</p><p>I have a strong foundation in machine learning, data processing, and problem-solving, with a passion for applying AI to [[real-world challenges]] and continuously learning new technologies.</p>"
                         },
                         "es": {
-                            "text": "<p>Soy un desarrollador de {{PHP}} con [[más de una década]] de experiencia, especializado en desarrollo backend y con algo de experiencia en frontend. También tengo experiencia práctica en entornos de producción con C++, C#, Go y Python.</p><p>Este variado historial me permite adaptarme a una amplia gama de necesidades de proyectos, ya sea construyendo APIs escalables, optimizando el rendimiento de sistemas o contribuyendo a soluciones full-stack.</p><p>¡Espero con interés colaborar [[contigo!]]</p>"
+                            "text": "<p>Soy un reciente graduado en {{Ciencias de la Computación}} con experiencia práctica en el desarrollo de modelos de [[IA]] y [[Visión por Computadora]] usando <b>PyTorch</b> y <b>TensorFlow</b>.</p><p>Tengo una base sólida en aprendizaje automático, procesamiento de datos y resolución de problemas, con pasión por aplicar la IA a [[desafíos del mundo real]] y aprender nuevas tecnologías continuamente.</p>"
                         },
                         "fr": {
-                            "text": "<p>Je suis développeur {{PHP}} avec [[plus d'une décennie]] d'expérience, spécialisé dans le développement backend avec un peu de travail en frontend également. J'ai aussi de l'expérience en production avec les technologies C++, C#, Go et Python.</p><p>Ce parcours diversifié me permet de m'adapter à une large gamme de besoins de projets, qu'il s'agisse de créer des API évolutives, d'améliorer les performances système ou de participer à des solutions full-stack.</p><p>Je suis impatient de collaborer [[avec vous !]]</p>"
+                            "text": "<p>Je suis un récent diplômé en {{Informatique}} avec une expérience pratique dans le développement de modèles d’[[IA]] et de [[Vision par Ordinateur]] avec <b>PyTorch</b> et <b>TensorFlow</b>.</p><p>J’ai une base solide en apprentissage automatique, traitement de données et résolution de problèmes, avec une passion pour l’application de l’IA aux [[défis du monde réel]] et l’apprentissage continu de nouvelles technologies.</p>"
                         },
                         "ko": {
-                            "text": "<p>저는 {{백엔드}} 개발을 전문으로 하고, 프론트엔드 작업도 일부 수행해온 [[10년 이상의]] 경력을 가진 PHP 개발자입니다. 또한 C++, C#, Go, Python 스택을 사용한 프로덕션 경험도 있습니다.</p><p>이 다양한 배경 덕분에 프로젝트의 다양한 요구에 유연하게 대처할 수 있습니다. 확장 가능한 API 구축, 시스템 성능 최적화, 또는 전체 스택 솔루션에 기여하는 등 다양한 분야에 능숙하게 참여할 수 있습니다. 저는 각 프로젝트에 맞는 최적의 도구를 찾는 것과 새로운 도전을 즐깁니다.</p><p>[[당신과 협업]]하기를 기대하고 있습니다!</p>"
+                            "text": "<p>저는 <b>PyTorch</b>와 <b>TensorFlow</b>를 사용하여 [[AI]] 및 [[컴퓨터 비전]] 모델을 개발한 실무 경험을 가진 {{컴퓨터 공학}} 최근 졸업생입니다.</p><p>머신러닝, 데이터 처리 및 문제 해결에 강한 기반을 갖추고 있으며, AI를 [[실세계 문제에 적용]]하는 것에 열정을 가지고 있습니다.</p>"
                         }
                     }
                 }

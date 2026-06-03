@@ -36,392 +36,219 @@
                 "en": {
                     "category_all": "All",
                     "category_apps": "Apps",
-                    "category_web": "Web",
-                    "category_utilities": "Utilities"
+                    "category_web": "Web"
                 },
                 "es": {
                     "category_all": "Todo",
                     "category_apps": "Apps",
-                    "category_web": "Web",
-                    "category_utilities": "Utilidades"
+                    "category_web": "Web"
                 },
                 "fr": {
                     "category_all": "Tout",
                     "category_apps": "Apps",
-                    "category_web": "Web",
-                    "category_utilities": "Utilitaires"
+                    "category_web": "Web"
                 },
                 "ko": {
                     "category_all": "모두",
                     "category_apps": "앱",
-                    "category_web": "웹",
-                    "category_utilities": "유틸리티"
+                    "category_web": "웹"
                 }
             },
             "settings": {
-                "categorize_by": ["category_apps", "category_web", "category_utilities"],
+                "categorize_by": ["category_apps", "category_web"],
                 "order_items_by": "id",
                 "order_items_sort": "asc"
             },
             "items": [
                 {
                     "id": 1,
-                    "categoryId": "category_utilities",
-                    "img": "images/pictures/portfolio-project-logo-3.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "categoryId": "category_apps",
+                    "img": "images/pictures/portfolio-project-logo-1.png",
+                    "faIcon": "fa-solid fa-comments",
+                    "faIconColors": {"bg": "#4A90D9", "fill": "white"},
                     "preview": {
-                        "links": [
-                            {"href": "https://github.com", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"},
-                            {"href": "https://npm.com", "tooltipString": "see_on_npm", "faIcon": "fa-brands fa-npm"}
-                        ],
-                        "screenshots": [
-                            "images/pictures/screenshot-demo-landscape-1.png",
-                            "images/pictures/screenshot-demo-landscape-2.png",
-                            "images/pictures/screenshot-demo-landscape-3.png",
-                            "images/pictures/screenshot-demo-landscape-4.png",
-                            "images/pictures/screenshot-demo-landscape-5.png"
-                        ],
-                        "screenshotsAspectRatio": "16:9",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=PnV8p1xm7-o"
+                        "links": [{"href": "https://github.com/TSon11/CHATBOT_For_Recruitment_Website", "tooltipString": "GitHub"}],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "BrainPulse",
-                            "text": "A <b>RESTful API</b> backend built with <b>Node.js</b>, designed for high-performance data processing and real-time event handling.",
-                            "tags": ["API", "REST", "Backend"]
+                            "title": "Chatbot for Recruitment Website",
+                            "text": "A web-based recruitment platform connecting employers and job seekers, integrating a <b>Retrieval-Augmented Generation (RAG)</b> system to enhance job and candidate matching.",
+                            "tags": ["RAG", "LangChain", "FastAPI", "GPT", "NLP"]
                         },
                         "es": {
-                            "text": "Una <b>API RESTful</b> construida con <b>Node.js</b>, diseñada para el procesamiento de datos de alto rendimiento y la gestión de eventos en tiempo real.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "Una plataforma de reclutamiento web que conecta empleadores y candidatos, integrando un sistema <b>RAG</b> para mejorar la coincidencia de empleos y candidatos.",
+                            "tags": ["RAG", "LangChain", "FastAPI", "GPT", "NLP"]
                         },
                         "fr": {
-                            "text": "Un backend <b>API RESTful</b> construit avec <b>Node.js</b>, conçu pour le traitement de données haute performance et la gestion d'événements en temps réel.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "Une plateforme de recrutement web connectant employeurs et candidats, intégrant un système <b>RAG</b> pour améliorer la mise en correspondance.",
+                            "tags": ["RAG", "LangChain", "FastAPI", "GPT", "NLP"]
                         },
                         "ko": {
-                            "text": "<b>Node.js</b>로 구축된 <b>RESTful API</b> 백엔드로, 고성능 데이터 처리 및 실시간 이벤트 처리용으로 설계되었습니다.",
-                            "tags": ["API", "REST", "Backend"]
+                            "text": "구인구직자를 연결하는 웹 기반 채용 플랫폼으로, <b>RAG</b> 시스템을 통합하여 직무 및 후보자 매칭을 향상시킵니다.",
+                            "tags": ["RAG", "LangChain", "FastAPI", "GPT", "NLP"]
                         }
                     }
                 },
                 {
                     "id": 2,
                     "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-7.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "img": "images/pictures/portfolio-project-logo-2.png",
+                    "faIcon": "fa-solid fa-hard-hat",
+                    "faIconColors": {"bg": "#E8A838", "fill": "white"},
                     "preview": {
-                        "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
-                        ],
-                        "screenshots": [
-                            "images/pictures/screenshot-demo-portrait-1.png",
-                            "images/pictures/screenshot-demo-portrait-2.png",
-                            "images/pictures/screenshot-demo-portrait-3.png",
-                            "images/pictures/screenshot-demo-portrait-4.png",
-                            "images/pictures/screenshot-demo-portrait-5.png",
-                            "images/pictures/screenshot-demo-portrait-6.png"
-                        ],
-                        "screenshotsAspectRatio": "9:16",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=TfgBHC5gvTI"
+                        "links": [{"href": "https://github.com/TSon11/VoThaiSon_HelmetDetection", "tooltipString": "GitHub"}],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "MailM8",
-                            "text": "A cross-platform email client built with <b>Flutter</b>, providing efficient communication with an intuitive UI for <b>managing emails</b>.",
-                            "tags": ["Flutter", "E-mail", "Communication"]
+                            "title": "Helmet Detection System",
+                            "text": "A real-time system to detect whether a person is wearing a <b>helmet</b> from images or video streams using <b>YOLOv8</b> object detection.",
+                            "tags": ["Python", "YOLOv8", "OpenCV", "Streamlit", "Computer Vision"]
                         },
                         "es": {
-                            "text": "Un cliente de correo electrónico multiplataforma construido con <b>Flutter</b>, que ofrece comunicación eficiente y una interfaz intuitiva para la <b>gestión de correos electrónicos</b>.",
-                            "tags": ["Flutter", "Correo", "Comunicación"]
+                            "text": "Un sistema en tiempo real para detectar si una persona lleva <b>casco</b> en imágenes o flujos de video usando <b>YOLOv8</b>.",
+                            "tags": ["Python", "YOLOv8", "OpenCV", "Streamlit", "Visión por Computadora"]
                         },
                         "fr": {
-                            "text": "Un client de messagerie multiplateforme construit avec <b>Flutter</b>, offrant une communication efficace et une interface intuitive pour <b>gérer les e-mails</b>.",
-                            "tags": ["Flutter", "E-mail", "Communication"]
+                            "text": "Un système en temps réel pour détecter si une personne porte un <b>casque</b> à partir d'images ou de flux vidéo avec <b>YOLOv8</b>.",
+                            "tags": ["Python", "YOLOv8", "OpenCV", "Streamlit", "Vision par Ordinateur"]
                         },
                         "ko": {
-                            "text": "<b>Flutter</b>로 구축된 크로스플랫폼 이메일 클라이언트로, 이메일 <b>관리</b>를 위한 직관적인 UI를 통해 효율적인 소통을 제공합니다.",
-                            "tags": ["Flutter", "이메일", "소통"]
+                            "text": "<b>YOLOv8</b> 객체 감지를 사용하여 이미지 또는 비디오 스트림에서 <b>헬멧</b> 착용 여부를 실시간으로 감지하는 시스템입니다.",
+                            "tags": ["Python", "YOLOv8", "OpenCV", "Streamlit", "컴퓨터 비전"]
                         }
                     }
                 },
                 {
                     "id": 3,
                     "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-6.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "img": "images/pictures/portfolio-project-logo-3.png",
+                    "faIcon": "fa-solid fa-recycle",
+                    "faIconColors": {"bg": "#4CAF50", "fill": "white"},
                     "preview": {
-                        "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
-                        ],
-                        "screenshots": [
-                            "images/pictures/screenshot-demo-landscape-1.png",
-                            "images/pictures/screenshot-demo-landscape-2.png",
-                            "images/pictures/screenshot-demo-landscape-3.png",
-                            "images/pictures/screenshot-demo-landscape-4.png",
-                            "images/pictures/screenshot-demo-landscape-5.png"
-                        ],
-                        "screenshotsAspectRatio": "16:9",
+                        "links": [{"href": "https://github.com/TSon11/VoThaiSon_CS114", "tooltipString": "GitHub"}],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
                         "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "Light Blue",
-                            "text": "A fully-featured productivity app developed with <b>React Native</b>, enabling users to organize tasks, notes, and projects across multiple devices. It offers <b>cloud sync</b>, intuitive UI, and collaboration features.",
-                            "tags": ["React", "Organization", "Notes"]
+                            "title": "Garbage Classification",
+                            "text": "Applies <b>YOLOv8</b> to automatically classify waste into four categories — plastic, glass, metal, and paper. Developed as a Machine Learning course project to automate waste sorting.",
+                            "tags": ["Python", "YOLOv8", "Machine Learning", "Classification"]
                         },
                         "es": {
-                            "text": "Una app de productividad con todas las funciones, desarrollada con <b>React Native</b>, que permite a los usuarios organizar tareas, notas y proyectos en varios dispositivos. Ofrece <b>sincronización en la nube</b>, interfaz intuitiva y características de colaboración.",
-                            "tags": ["React", "Organización", "Notas"]
+                            "text": "Aplica <b>YOLOv8</b> para clasificar residuos automáticamente en cuatro categorías: plástico, vidrio, metal y papel, como proyecto de curso de Machine Learning.",
+                            "tags": ["Python", "YOLOv8", "Machine Learning", "Clasificación"]
                         },
                         "fr": {
-                            "text": "Une application de productivité complète développée avec <b>React Native</b>, permettant aux utilisateurs d'organiser tâches, notes et projets sur plusieurs appareils. Elle offre <b>synchronisation cloud</b>, interface intuitive et fonctionnalités de collaboration.",
-                            "tags": ["React", "Organisation", "Notes"]
+                            "text": "Utilise <b>YOLOv8</b> pour classer automatiquement les déchets en quatre catégories — plastique, verre, métal et papier. Projet de cours en Machine Learning.",
+                            "tags": ["Python", "YOLOv8", "Machine Learning", "Classification"]
                         },
                         "ko": {
-                            "text": "<b>React Native</b>로 개발된 기능이 풍부한 생산성 앱으로, 사용자가 여러 기기에서 작업, 메모, 프로젝트를 <b>클라우드 동기화</b>와 직관적인 UI로 관리할 수 있습니다.",
-                            "tags": ["React", "조직", "메모"]
+                            "text": "<b>YOLOv8</b>을 적용하여 플라스틱, 유리, 금속, 종이의 네 가지 범주로 쓰레기를 자동 분류합니다. 머신러닝 과목 프로젝트로 개발되었습니다.",
+                            "tags": ["Python", "YOLOv8", "머신러닝", "분류"]
                         }
                     }
                 },
                 {
                     "id": 4,
                     "categoryId": "category_web",
-                    "img": "images/pictures/portfolio-project-logo-1.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "img": "images/pictures/portfolio-project-logo-4.png",
+                    "faIcon": "fa-solid fa-car",
+                    "faIconColors": {"bg": "#2C3E50", "fill": "white"},
                     "preview": {
-                        "links": [
-                            {"href": "https://cash.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [
-
-                        ],
+                        "links": [],
+                        "screenshots": [],
                         "screenshotsAspectRatio": "",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=MQe_MoJ7Iww"
+                        "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "SmartCash",
-                            "text": "A finance website built using <b>Next.js</b>, allowing users to <b>track budgets</b> and manage their money with interactive charts and insights.",
-                            "tags": ["Next.js", "Finance", "Money"]
+                            "title": "Car Showroom 3D",
+                            "text": "A professional <b>3D car showroom</b> website targeting luxury car dealerships. Features interactive 3D models built with <b>Three.js</b>, providing an immersive experience to explore cars.",
+                            "tags": ["Three.js", "JavaScript", "3D", "WebGL"]
                         },
                         "es": {
-                            "title": "SmartCash",
-                            "text": "Un sitio web financiero construido con <b>Next.js</b>, que permite a los usuarios <b>seguir presupuestos</b> y gestionar su dinero con gráficos interactivos e ideas.",
-                            "tags": ["Next.js", "Finanzas", "Dinero"]
+                            "text": "Un sitio web profesional de <b>sala de exposición 3D</b> para concesionarios de lujo. Presenta modelos 3D interactivos con <b>Three.js</b> para una experiencia inmersiva.",
+                            "tags": ["Three.js", "JavaScript", "3D", "WebGL"]
                         },
                         "fr": {
-                            "title": "SmartCash",
-                            "text": "Un site web financier construit avec <b>Next.js</b>, permettant aux utilisateurs de <b>suivre les budgets</b> et de gérer leur argent avec des graphiques interactifs et des analyses.",
-                            "tags": ["Next.js", "Finance", "Argent"]
+                            "text": "Un site web de <b>salle d'exposition 3D</b> professionnel pour les concessionnaires de luxe. Propose des modèles 3D interactifs avec <b>Three.js</b> pour une expérience immersive.",
+                            "tags": ["Three.js", "JavaScript", "3D", "WebGL"]
                         },
                         "ko": {
-                            "title": "SmartCash",
-                            "text": "<b>Next.js</b>로 구축된 금융 웹사이트로, 사용자가 <b>예산을 추적</b>하고 상호작용하는 차트와 통찰력으로 자금을 관리할 수 있습니다.",
-                            "tags": ["Next.js", "금융", "돈"]
+                            "text": "럭셔리 자동차 딜러십을 위한 전문적인 <b>3D 자동차 쇼룸</b> 웹사이트입니다. <b>Three.js</b>로 구축된 인터랙티브 3D 모델을 제공합니다.",
+                            "tags": ["Three.js", "JavaScript", "3D", "WebGL"]
                         }
                     }
                 },
                 {
                     "id": 5,
                     "categoryId": "category_apps",
-                    "img": "images/pictures/portfolio-project-logo-2.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
+                    "img": "images/pictures/portfolio-project-logo-5.png",
+                    "faIcon": "fa-solid fa-robot",
+                    "faIconColors": {"bg": "#7B2FBE", "fill": "white"},
                     "preview": {
-                        "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
-                        ],
-                        "screenshots": [
-
-                        ],
+                        "links": [{"href": "https://github.com/TSon11/AI_Multimodal_Chatbot_System", "tooltipString": "GitHub"}],
+                        "screenshots": [],
                         "screenshotsAspectRatio": "",
                         "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "Snappy",
-                            "text": "A powerful photography app designed with <b>Swift</b> for iOS and Android, featuring <b>advanced camera controls</b>, editing tools, and AI-powered filters for quick photo enhancements.",
-                            "tags": ["Swift", "Photography", "Camera"]
+                            "title": "AI Multimodal Chatbot System",
+                            "text": "A full-stack <b>AI chatbot</b> supporting text chat, image understanding, and CSV/URL data analysis. Built with a <b>FastAPI</b> backend and <b>React</b> frontend, powered by OpenAI API.",
+                            "tags": ["Python", "FastAPI", "React", "OpenAI", "Multimodal", "AI"]
                         },
                         "es": {
-                            "title": "Snappy",
-                            "text": "Una app de fotografía potente diseñada con <b>Swift</b> para iOS y Android, con <b>controles avanzados de cámara</b>, herramientas de edición y filtros potenciados por IA para mejoras rápidas de fotos.",
-                            "tags": ["Swift", "Fotografía", "Cámara"]
+                            "text": "Un <b>chatbot de IA</b> full-stack con soporte para chat de texto, comprensión de imágenes y análisis de datos CSV/URL. Construido con <b>FastAPI</b> y <b>React</b>, usando OpenAI API.",
+                            "tags": ["Python", "FastAPI", "React", "OpenAI", "Multimodal", "IA"]
                         },
                         "fr": {
-                            "title": "Snappy",
-                            "text": "Une application de photographie puissante conçue avec <b>Swift</b> pour iOS et Android, avec des <b>contrôles avancés de la caméra</b>, des outils d'édition et des filtres IA pour des améliorations rapides des photos.",
-                            "tags": ["Swift", "Photographie", "Caméra"]
+                            "text": "Un <b>chatbot IA</b> full-stack prenant en charge le chat textuel, la compréhension d'images et l'analyse de données CSV/URL. Construit avec <b>FastAPI</b> et <b>React</b>, propulsé par OpenAI.",
+                            "tags": ["Python", "FastAPI", "React", "OpenAI", "Multimodal", "IA"]
                         },
                         "ko": {
-                            "title": "Snappy",
-                            "text": "<b>Swift</b>로 설계된 강력한 사진 앱으로, iOS 및 Android에서 <b>고급 카메라 제어</b>, 편집 도구, AI 기반 필터를 통해 빠르게 사진을 보정할 수 있습니다.",
-                            "tags": ["Swift", "사진", "카메라"]
+                            "text": "텍스트 채팅, 이미지 이해 및 CSV/URL 데이터 분석을 지원하는 풀스택 <b>AI 챗봇</b>입니다. <b>FastAPI</b> 백엔드와 <b>React</b> 프론트엔드로 구축되었으며 OpenAI API를 사용합니다.",
+                            "tags": ["Python", "FastAPI", "React", "OpenAI", "멀티모달", "AI"]
                         }
                     }
                 },
                 {
                     "id": 6,
-                    "categoryId": "category_web",
-                    "img": "images/pictures/portfolio-project-logo-5.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-                            {"href": "https://google.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Sweet Scoops",
-                            "text": "A recipe website built with <b>WordPress</b> and WooCommerce, featuring a rich collection of <b>dessert recipes</b> and an integrated e-commerce platform.",
-                            "tags": ["WooCommerce", "Food", "Desserts"]
-                        },
-                        "es": {
-                            "title": "Sweet Scoops",
-                            "text": "Un sitio web de recetas construido con <b>WordPress</b> y WooCommerce, con una rica colección de <b>recetas de postres</b> y una plataforma de comercio electrónico integrada.",
-                            "tags": ["WooCommerce", "Comida", "Postres"]
-                        },
-                        "fr": {
-                            "title": "Sweet Scoops",
-                            "text": "Un site de recettes construit avec <b>WordPress</b> et WooCommerce, présentant une riche collection de <b>recettes de desserts</b> et une plateforme de commerce électronique intégrée.",
-                            "tags": ["WooCommerce", "Cuisine", "Desserts"]
-                        },
-                        "ko": {
-                            "title": "Sweet Scoops",
-                            "text": "<b>WordPress</b>와 WooCommerce로 구축된 레시피 웹사이트로, 풍부한 <b>디저트 레시피</b> 모음과 통합된 전자상거래 플랫폼을 제공합니다.",
-                            "tags": ["WooCommerce", "음식", "디저트"]
-                        }
-                    }
-                },
-                {
-                    "id": 7,
-                    "categoryId": "category_web",
-                    "img": "",
-                    "faIcon": "fa-solid fa-guitar",
-                    "faIconColors": {"bg": "#7671AA", "fill": "#EEEEEE"},
-                    "preview": {
-                        "links": [
-                            {"href": "https://google.com", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": ""
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "RockVerse",
-                            "text": "A dynamic music and entertainment website developed with <b>Django</b>, showcasing rock music news, events, and <b>streaming content</b>.",
-                            "tags": ["Django", "Music", "Rock"]
-                        },
-                        "es": {
-                            "title": "RockVerse",
-                            "text": "Un sitio web dinámico de música y entretenimiento desarrollado con <b>Django</b>, que muestra noticias de música rock, eventos y <b>contenido en streaming</b>.",
-                            "tags": ["Django", "Música", "Rock"]
-                        },
-                        "fr": {
-                            "title": "RockVerse",
-                            "text": "Un site web de musique et de divertissement dynamique développé avec <b>Django</b>, mettant en avant des nouvelles, événements et <b>contenu en streaming</b> sur le rock.",
-                            "tags": ["Django", "Musique", "Rock"]
-                        },
-                        "ko": {
-                            "title": "RockVerse",
-                            "text": "<b>Django</b>로 개발된 동적인 음악 및 엔터테인먼트 웹사이트로, 록 음악 뉴스, 이벤트 및 <b>스트리밍 콘텐츠</b>를 제공합니다.",
-                            "tags": ["Django", "음악", "록"]
-                        }
-                    }
-                },
-                {
-                    "id": 8,
-                    "categoryId": "category_utilities",
-                    "img": "images/pictures/portfolio-project-logo-4.png",
-                    "faIcon": "",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "preview": {
-                        "links": [
-
-                        ],
-                        "screenshots": [
-
-                        ],
-                        "screenshotsAspectRatio": "",
-                        "youtubeVideo": "https://www.youtube.com/watch?v=bf3Lz33nHy0"
-                    },
-                    "locales": {
-                        "en": {
-                            "title": "Soccer Analytics",
-                            "text": "An AI-powered sports analytics platform built with <b>Python</b> and <b>TensorFlow</b>, offering detailed soccer <b>predictions</b> and team management tools.",
-                            "tags": ["AI", "Prediction", "Soccer"]
-                        },
-                        "es": {
-                            "title": "Soccer Analytics",
-                            "text": "Una plataforma de análisis deportivo impulsada por IA construida con <b>Python</b> y <b>TensorFlow</b>, que ofrece <b>predicciones</b> detalladas de fútbol y herramientas de gestión de equipos.",
-                            "tags": ["IA", "Predicción", "Fútbol"]
-                        },
-                        "fr": {
-                            "title": "Soccer Analytics",
-                            "text": "Une plateforme d'analytique sportive alimentée par IA construite avec <b>Python</b> et <b>TensorFlow</b>, offrant des <b>prédictions</b> détaillées pour le football et des outils de gestion d'équipe.",
-                            "tags": ["IA", "Prédiction", "Football"]
-                        },
-                        "ko": {
-                            "title": "Soccer Analytics",
-                            "text": "<b>Python</b> 및 <b>TensorFlow</b>로 구축된 AI 기반 스포츠 분석 플랫폼으로, 축구에 대한 <b>예측</b> 및 팀 관리 도구를 제공합니다.",
-                            "tags": ["AI", "예측", "축구"]
-                        }
-                    }
-                },
-                {
-                    "id": 9,
                     "categoryId": "category_apps",
-                    "img": "",
-                    "faIcon": "fa-solid fa-truck-fast",
-                    "faIconColors": {"bg": "#007396", "fill": "#EEEEEE"},
+                    "img": "images/pictures/portfolio-project-logo-6.png",
+                    "faIcon": "fa-solid fa-image",
+                    "faIconColors": {"bg": "#E74C3C", "fill": "white"},
                     "preview": {
-                        "links": [
-                            {"href": "https://apple.com", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"},
-                            {"href": "https://google.com", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://windows.com", "tooltipString": "see_on_windows_store", "faIcon": "fa-brands fa-windows"}
-                        ],
-                        "screenshots": [
-
-                        ],
+                        "links": [{"href": "https://github.com/TSon11/VoThaiSon_ImageRetrival", "tooltipString": "GitHub"}],
+                        "screenshots": [],
                         "screenshotsAspectRatio": "",
                         "youtubeVideo": ""
                     },
                     "locales": {
                         "en": {
-                            "title": "QuickDrop",
-                            "text": "A cross-platform delivery app built with <b>React Native</b> and a <b>Node.js backend</b>, featuring <b>real-time tracking</b> and seamless integration with multiple platforms.",
-                            "tags": ["React Native", "Delivery", "Real-Time Tracking"]
+                            "title": "Image Retrieval System",
+                            "text": "A <b>content-based image retrieval</b> system that finds the most visually similar images from a database of 80 images across 6 categories, evaluated with precision, recall, and <b>mAP metrics</b>.",
+                            "tags": ["Python", "Computer Vision", "Image Retrieval", "mAP", "Similarity Search"]
                         },
                         "es": {
-                            "title": "QuickDrop",
-                            "text": "Una app de entregas multiplataforma construida con <b>React Native</b> y un backend de <b>Node.js</b>, con <b>seguimiento en tiempo real</b> e integración perfecta en múltiples plataformas.",
-                            "tags": ["React Native", "Entrega", "Seguimiento"]
+                            "text": "Un sistema de <b>recuperación de imágenes por contenido</b> que encuentra las imágenes más similares en una base de 80 imágenes en 6 categorías, evaluado con precisión, recall y <b>mAP</b>.",
+                            "tags": ["Python", "Visión por Computadora", "Recuperación de Imágenes", "mAP", "Búsqueda de Similitud"]
                         },
                         "fr": {
-                            "title": "QuickDrop",
-                            "text": "Une application de livraison multiplateforme construite avec <b>React Native</b> et un backend <b>Node.js</b>, avec <b>suivi en temps réel</b> et intégration fluide sur plusieurs plateformes.",
-                            "tags": ["React Native", "Livraison", "Suivi"]
+                            "text": "Un système de <b>recherche d'images par contenu</b> qui trouve les images les plus similaires dans une base de 80 images sur 6 catégories, évalué avec précision, rappel et <b>mAP</b>.",
+                            "tags": ["Python", "Vision par Ordinateur", "Recherche d'Images", "mAP", "Recherche de Similarité"]
                         },
                         "ko": {
-                            "title": "QuickDrop",
-                            "text": "<b>React Native</b>와 <b>Node.js</b> 백엔드로 구축된 크로스플랫폼 배송 앱으로, <b>실시간 추적</b> 및 여러 플랫폼과의 원활한 통합을 제공합니다.",
-                            "tags": ["React Native", "배송", "실시간 추적"]
+                            "text": "6개 카테고리의 80개 이미지 데이터베이스에서 가장 유사한 이미지를 찾는 <b>콘텐츠 기반 이미지 검색</b> 시스템으로, 정밀도, 재현율 및 <b>mAP 지표</b>로 평가됩니다.",
+                            "tags": ["Python", "컴퓨터 비전", "이미지 검색", "mAP", "유사도 검색"]
                         }
                     }
                 }

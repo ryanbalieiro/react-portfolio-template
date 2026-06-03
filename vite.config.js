@@ -5,6 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     base: '/react-portfolio-template/',
     plugins: [react()],
+    test: {
+        globals: true,
+        environment: 'happy-dom',
+        setupFiles: ['./src/test/setup.js'],
+        css: false,
+    },
     build: {
         rollupOptions: {
             output: {

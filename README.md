@@ -2,7 +2,7 @@
     <img src="docs/assets/logo-large.png" width="120">
 </p>
 
-# [React Portfolio](https://ryanbalieiro.github.io/react-portfolio-template/) by Ryan Balieiro
+# [React Portfolio](https://ryanbalieiro.github.io/react-portfolio-template/) by Nikhil Kumar
 
 A sleek, futuristic portfolio template for developers – built with **React** and **Bootstrap 5**.
 
@@ -23,9 +23,9 @@ Here's a list of live versions of the template:
 
 | #     | Version             | Description                                             | URL                                                                     |
 |-------|---------------------|---------------------------------------------------------|-------------------------------------------------------------------------|
-| 🟢    | Mark Choi (default) | Latest deployment of the template here on GitHub pages. | [Preview](https://ryanbalieiro.github.io/react-portfolio-template/)     |
-| 🟣    | Emily Park          | An example of how the template can be customized.       | [Preview](https://ryansandbox.github.io/emily-park-react-portfolio/)    |
-| 🔵    | Michael Özkan       | Another example of how the template can be customized.  | [Preview](https://ryansandbox.github.io/michael-ozkan-react-portfolio/) |
+| 🟢    | Mark Choi (default) | Latest deployment of the template here on GitHub pages. | [Preview](https://nikhilkumar.github.io/react-portfolio-template/)     |
+| 🟣    | Emily Park          | An example of how the template can be customized.       | [Preview](https://nikhilkumar.github.io/emily-park-react-portfolio/)    |
+| 🔵    | Michael Özkan       | Another example of how the template can be customized.  | [Preview](https://nikhilkumar.github.io/michael-ozkan-react-portfolio/) |
 
 ## Layout and concept
 
@@ -99,7 +99,7 @@ Follow these additional tutorials to further enhance your portfolio with advance
 
 ## About
 
-This template was created by and is maintained by **[Ryan Balieiro](https://ryanbalieiro.com/)**.
+This template was created by and is maintained by **[Ryan Balieiro](https://nikhilkumar.com/)**.
 
 It's based on the **[React](https://reactjs.org/)** framework created by Jordan Walke, and the **[Bootstrap](https://getbootstrap.com/)** framework created by Mark Otto and Jacob Thorton.
 

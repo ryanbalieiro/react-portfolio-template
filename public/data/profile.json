@@ -1,5 +1,5 @@
 {
-    "name": "Mark Choi",
+    "name": "Nikhil Kumar",
 
     "profilePictureUrl": "images/pictures/profile-picture.jpg",
     "resumePdfUrl": "",
@@ -10,11 +10,11 @@
 
     "locales": {
         "en": {
-            "localized_name": "Mark Choi",
-            "localized_name_stylized": " [[Mark {{Choi}}]]",
+            "localized_name": "Nikhil Kumar",
+            "localized_name_stylized": " [[Nikhil {{Kumar}}]]",
             "status_message_available_for_freelance": "Available for freelance!",
             "roles": [
-                "Backend Developer",
+                "Java Developer",
                 "Frontend Developer",
                 "DevOps Engineer",
                 "UX Designer"

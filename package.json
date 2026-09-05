@@ -20,7 +20,7 @@
         "react-bootstrap": "^2.10.4",
         "react-dom": "^18.3.1",
         "smooth-scrollbar": "^8.8.4",
-        "swiper": "^11.1.14"
+        "swiper": "^14.2.0"
     },
     "devDependencies": {
         "@eslint/js": "^9.9.0",

@@ -23,7 +23,7 @@
         "defaultLanguageId": "en",
         "defaultThemeId": "dark",
         "fullscreenEnabled": true,
-        "showSpinnerOnThemeChange": false
+        "showSpinnerOnThemeChange": true
     },
 
     "supportedLanguages": [
@@ -112,5 +112,8 @@
         ]
     },
 
-    "imagesToCache": []
+    "imagesToCache": [
+        "images/pictures/profile-picture-dark.jpg",
+        "images/pictures/profile-picture-light.jpg"
+    ]
 }

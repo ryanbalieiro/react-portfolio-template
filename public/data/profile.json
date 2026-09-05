@@ -1,7 +1,7 @@
 {
     "name": "Mark Choi",
 
-    "profilePictureUrl": "images/pictures/profile-picture.jpg",
+    "profilePictureUrl": "images/pictures/profile-picture-{theme}.jpg",
     "resumePdfUrl": "",
 
     "statusCircleVisible": true,
